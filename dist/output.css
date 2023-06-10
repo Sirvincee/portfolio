@@ -522,15 +522,67 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.block {
+  display: block;
 }
 
-.underline {
-  text-decoration-line: underline;
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.bg-\[\#FFF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.border {
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.borderlight {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+
+.redyellowgreen {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .redyellowgreen {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
+.bordermain {
+  border-radius: 0.375rem;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
