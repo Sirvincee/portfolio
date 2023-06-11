@@ -19,3 +19,7 @@
 .bordermain{
     @apply border-t-2 border-gray-500 rounded-md
 }
+
+.showMenu{
+    @apply bottom-10
+}
