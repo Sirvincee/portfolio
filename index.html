@@ -7,6 +7,16 @@
   <link href="/dist/output.css" rel="stylesheet" />
   <!-- <script src="../src/app.js"></script> -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .accordion .accordion-arrow {
+      transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  .accordion.open .accordion-arrow {
+    transform: rotate(0);
+  }
+  </style>
 </head>
 
 <body class="bg-[#FFF] relative" style="font-family: 'Poppins', sans-serif">
@@ -130,7 +140,7 @@
   </div>
 
   <!-- section 4 wrapper -->
-  <div class="w-full h-[100vh] p-3" id="skills">
+  <div class="w-full h-[110vh] p-3" id="skills">
     <!-- section 4 -->
     <!-- skills -->
     <section class="w-full flex flex-col items-center justify-center pt-12">
@@ -140,32 +150,140 @@
       </div>
       <!-- technical skills -->
       <!-- frontend -->
-      <div class="w-full grid-cols-4 gap-4">
-        <div class="w-full flex borderlight">
-          <span class="w-[15%] flex items-center justify-center text-3xl"><i class="uil uil-brackets-curly"></i></span>
-          <span class="w-[70%] flex flex-col justify-center items-center">
-            <span class="w-full font-bold text-2xl">Frontend developer</i></span>
-            <span class="w-full">More than 4 years</i></span>
+
+
+      <!-- designer -->
+      <div class="w-full grid-cols-4 gap-4 px-4 mt-10 skills_content skills-close">
+        <div class="w-full flex justify-between mt-4 skills_header">
+          <span class="flex items-center justify-center text-2xl"><i class="uil uil-swatchbook"></i></span>
+          <span class="w-fit flex flex-col items-center">
+            <span class="w-full font-bold text-xl">Designer</i></span>
+            <span class="w-full">More than 5 years</i></span>
           </span>
-          <span class="w-[15%] flex items-center justify-center text-3xl"><i class="uil uil-angle-down"></i></span>
+          <span class="flex items-center justify-center text-2xl"><i class="uil uil-angle-down"></i></span>
         </div>
-        <!-- html -->
-        <div class="w-full flex flex-col">
-          <span class="w-fulll">HTML</span>
-          <span class="w-fulll">90%</span>
-        </div>
-        <!-- css -->
-        <div class="w-full flex flex-col ">
-          <span class="w-fulll">CSS</span>
-          <span class="w-fulll">80%</span>
-        </div>
-        <!-- JavaScript -->
-        <div class="w-full flex flex-col ">
-          <span class="w-fulll">JavaScript</span>
-          <span class="w-fulll">50%</span>
+        <!-- wrapper for all skils -->
+        <div class="w-full  overflow-hidden h-0 ">
+          <!-- wrapper for skill nd % guage -->
+        <div class="w-full mt-10 py-2 ">
+          <!-- skill-Figma -->
+       <div class="w-full flex justify-between">
+         <span class="w-fit font-bold">Figma</span>
+         <span class="w-fit">50%</span>
+       </div>
+       <!-- % guage -->
+       <div class="w-full h-[5px] rounded-full bg-purple-600 mt-2">
+         <div class="w-[50%] rounded-full h-[5px] bg-purple-800"></div>
+       </div>
+       </div>
+       <!-- css -->
+       <!-- wrapper for skill nd % guage -->
+       <div class="w-full mt-4 py-2 ">
+         <!-- skill-Sketch -->
+      <div class="w-full flex justify-between">
+        <span class="w-fit font-bold">Sketch</span>
+        <span class="w-fit">70%</span>
+      </div>
+      <!-- % guage -->
+      <div class="w-full h-[5px] rounded-full bg-purple-600 mt-2">
+        <div class="w-[70%] rounded-full h-[5px] bg-purple-800"></div>
+      </div>
+      </div>
+       <!-- JavaScript -->
+       <!-- wrapper for skill nd % guage -->
+       <div class="w-full mt-4 py-2 ">
+         <!-- skill-Photoshop -->
+      <div class="w-full flex justify-between">
+        <span class="w-fit font-bold">Photoshop</span>
+        <span class="w-fit">65%</span>
+      </div>
+      <!-- % guage -->
+      <div class="w-full h-[5px] rounded-full bg-purple-600 mt-2">
+        <div class="w-[65%] rounded-full h-[5px] bg-purple-800"></div>
+      </div>
+      </div>
         </div>
       </div>
     </section>
+    <!-- accordion skills -->
+    <div class="max-w-md mx-auto my-8">
+      <div class="border rounded-md overflow-hidden">
+        <!-- Coding Skills Accordion -->
+        <div class="accordion">
+          <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
+            <span class="text-2xl"><i class="uil uil-brackets-curly"></i></span>
+            <span class="flex flex-col">
+              <span class="font-bold text-xl">Frontend developer</span>
+              <span>More than 4 years</span>
+            </span>
+            <span>
+              <svg class="accordion-arrow h-4 w-4 fill-current text-gray-600 transition-transform " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 14l6-6H4z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-body">
+            <ul class="ml-8 list-none">
+              <!-- html -->
+              <span class="w-full block py-2 px-1">
+                <span class="flex w-full justify-between font-bold"><li>HTML</li><li class="font-normal">80%</li></span>
+                <!-- guage -->
+                <span class="w-full h-[5px] bg-purple-600 block rounded-full mt-2">
+                  <span class="w-[80%] h-[5px] bg-purple-800 rounded-full block"></span>
+                </span>
+              </span>
+              <!-- css -->
+              <span class="w-full block py-2 px-1">
+                <span class="flex w-full justify-between font-bold">
+                  <li>CSS</li><li class="font-normal">70%</li>
+                </span>
+                <!-- guage -->
+                <span class="w-full h-[5px] bg-purple-600 block rounded-full mt-2">
+                  <span class="w-[80%] h-[5px] bg-purple-800 rounded-full block"></span>
+                </span>
+              </span>
+              <!-- javaScript -->
+              <span class="w-full block py-2 px-1">
+                <span class="flex w-full justify-between font-bold">
+                  <li>JavaScript</li><li class="font-normal">55%</li>
+                </span>
+                <!-- guage -->
+                <span class="w-full h-[5px] bg-purple-600 block rounded-full mt-2">
+                  <span class="w-[80%] h-[5px] bg-purple-800 rounded-full block"></span>
+                </span>
+              </span>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Design Skills Accordion -->
+        <div class="accordion">
+          <div class="accordion-header bg-gray-200 p-4 cursor-pointer flex justify-between items-center">
+            <span class="text-2xl"><i class="uil uil-swatchbook"></i></span>
+            <span class="flex flex-col">
+              <span class="font-bold text-xl">Designer</span>
+              <span>More than 5 years</span>
+            </span>
+            <span>
+              <svg class="accordion-arrow h-4 w-4 fill-current text-gray-600 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 14l6-6H4z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="accordion-body">
+            <ul class="ml-8">
+              <!-- figma -->
+              <span class="w-full block py-2 px-1">
+                <span class="flex w-full justify-between font-bold">
+                  <li>Figma</li><li class="font-normal">50%</li>
+                </span>
+              </span>
+              <li>Photoshop - 50%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 
@@ -201,6 +319,53 @@
     navMenu.classList.remove('showMenu')
   }
   navLink.forEach(n => n.addEventListener('click', linkAction))
+
+  // accordion skills
+  // const skillsContent = document.getElementById('skills_content'),
+  //   skillsHeader = document.querySelectorAll('.skills_header')
+
+  // function toggleSkills(){
+  //   let itemClass = this.parentNode.className
+
+  //   for(i = 0; i < skillsContent.lenght; i++){
+  //     skillsContent[i].className = 'skills_content skills_close'
+  //   }
+  //   if(itemClass === 'skills_content skills_close'){
+  //     this.parentNode.className = 'skill_content skills_open'
+  //   }
+  // }
+
+  // skillsHeader.forEach((el) =>{
+  //   el.addEventListener('click', toggleSkills)
+  // })
+
+  // accordion skills
+  document.addEventListener('DOMContentLoaded', function() {
+      var accordions = document.querySelectorAll('.accordion');
+      
+      accordions.forEach(function(accordion) {
+        var header = accordion.querySelector('.accordion-header');
+        var body = accordion.querySelector('.accordion-body');
+        var arrow = header.querySelector('.accordion-arrow');
+        
+        header.addEventListener('click', function() {
+          // Toggle the accordion body
+          body.style.display = body.style.display === 'block' ? 'none' : 'block';
+          
+          // Toggle the accordion arrow direction
+          accordion.classList.toggle('open');
+        });
+        
+        // Open the first accordion by default
+        if (accordion !== accordions[0]) {
+          body.style.display = 'none';
+          accordion.classList.remove('open');
+        } else {
+          accordion.classList.add('open');
+        }
+      });
+    });
+
 </script>
 
 </html>
