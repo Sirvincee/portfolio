@@ -16,6 +16,12 @@
   .accordion.open .accordion-arrow {
     transform: rotate(0);
   }
+  .qualification_content[data-content]{
+    display: none;
+  }
+  .qualification_active[data-content]{
+    display: block;
+  }
   </style>
 </head>
 
@@ -243,6 +249,156 @@
       </div>
     </div>
   </section>
+  <!-- qualification -->
+  <!-- wrapper -->
+  <section class="w-full mt-16 flex flex-col justify-center">
+    <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
+      <h1 class="text-2xl font-bold">Qualification</h1>
+      <h3 class="text-sm">My personal journey</h3>
+    </div>
+    <!-- education/work -->
+    <div class="w-[80%] m-auto flex mt-10">
+      <span class="w-1/2 flex justify-center font-bold items-center cursor-pointer qualification_active" data-target="#education">
+        <span class="mr-4 text-2xl"><i class="uil uil-swatchbook"></i></span>
+        <span>Education</span>
+      </span>
+      <span class="w-1/2 flex justify-center font-bold items-center cursor-pointer" data-target="#work">
+        <span class="mr-4 text-2xl"><i class="uil uil-swatchbook"></i></span>
+        <span>Work</span>
+      </span>
+    </div>
+    <!-- education/works data -->
+    <!-- wrapper -->
+    <div class="w-full">
+
+      
+      
+      
+    <!-- education/works data -->
+    <!-- qualification section 1 -->
+    <div class="w-full mt-7 qualification_content qualification_active" data-content id="education">
+      <!-- qualification 1 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <div class="m-auto">
+          <h3 class="font-bold">Computer Engineer</h3>
+          <span>Peru - University</span>
+          <div><i class="uil uil-swatchbook">2009 - 2014</i></div>
+        </div>
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800"></span>
+        </div>
+      </div>
+      <!-- qualification 2 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+        <div class=" m-auto">
+          <h3 class="font-bold">Web Design</h3>
+          <span>Spain - Institute</span>
+          <div><i class="uil uil-swatchbook">2014 - 2017</i></div>
+        </div>
+      </div>
+      <!-- qualification 3 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <div class="m-auto">
+          <h3 class="font-bold">Web Development</h3>
+          <span>Peru - University</span>
+          <div><i class="uil uil-swatchbook">2017 - 2019</i></div>
+        </div>
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+      </div>
+      <!-- qualification 4 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+        <div class="m-auto">
+          <h3 class="font-bold">Web Development</h3>
+          <span>Peru - University</span>
+          <div><i class="uil uil-swatchbook">2017 - 2019</i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- qualification section 2 -->
+    <div class="w-full mt-7 qualification_content" data-content id="work">
+      <!-- qualification 1 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+        <div class="m-auto">
+          <h3 class="font-bold">Software Engineer</h3>
+          <span>Microsoft - Peru</span>
+          <div><i class="uil uil-swatchbook">2016 - 2018</i></div>
+        </div>
+      </div>
+      <!-- qualification 2 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <div class="m-auto">
+          <h3 class="font-bold">Frontend Developer</h3>
+          <span>Apple Inc - Spain</span>
+          <div><i class="uil uil-swatchbook">2018 - 2020</i></div>
+        </div>
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+      </div>
+      <!-- qualification 3 -->
+      <div class="w-[95%] m-auto grid grid-cols-2">
+        <!-- rounder and line -->
+        <div class="flex justify-center items-center">
+          <span class="h-[12px] w-[12px] rounded-full bg-purple-800 block"></span>
+        </div>
+        <div class="m-auto">
+          <h3 class="font-bold">UI Designer</h3>
+          <span>Figma - Spain</span>
+          <div><i class="uil uil-swatchbook">2017 - 2019</i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
   </div>
 </body>
 
@@ -280,24 +436,6 @@
   }
   navLink.forEach(n => n.addEventListener('click', linkAction))
 
-  // accordion skills
-  // const skillsContent = document.getElementById('skills_content'),
-  //   skillsHeader = document.querySelectorAll('.skills_header')
-
-  // function toggleSkills(){
-  //   let itemClass = this.parentNode.className
-
-  //   for(i = 0; i < skillsContent.lenght; i++){
-  //     skillsContent[i].className = 'skills_content skills_close'
-  //   }
-  //   if(itemClass === 'skills_content skills_close'){
-  //     this.parentNode.className = 'skill_content skills_open'
-  //   }
-  // }
-
-  // skillsHeader.forEach((el) =>{
-  //   el.addEventListener('click', toggleSkills)
-  // })
 
   // accordion skills
   document.addEventListener('DOMContentLoaded', function() {
@@ -325,6 +463,26 @@
         }
       });
     });
+
+    // qualification tabs
+    const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+    tabs.forEach(tab =>{
+      tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContents.forEach(tabContent =>{
+          tabContent.classList.remove('qualification_active')
+        })
+        target.classList.add('qualification_active')
+
+        tabs.forEach(tab =>{
+          tab.classList.remove('qualification_active')
+        })
+        tab.classList.add('qualification_active')
+      })
+    })
 
 </script>
 
