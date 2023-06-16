@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/dist/output.css" rel="stylesheet" />
   <!-- <script src="../src/app.js"></script> -->
+  <!-- swiper.js -->
+  <link rel="stylesheet" href="../src/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
@@ -47,8 +49,8 @@
           <span class="w-full flex justify-between items-center">
             <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-briefcase-alt"></i><a
                 href="#services" class="navLink">Services</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-scenery"></i><a href="#"
-                class="navLink">Portfolio</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-scenery"></i><a
+                href="#portfolio" class="navLink">Portfolio</a></li>
             <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-message"></i><a href="#"
                 class="navLink">Contact Me</a></li>
           </span>
@@ -395,138 +397,227 @@
 
             <!-- Project Card 1 -->
             <div class="max-w-md mx-auto my-8">
-    <div class="bg-gray-100 p-4 rounded-md shadow-md">
-      <h2 class="text-xl font-bold">Project Title 1</h2>
-      <p class="mt-2">Project description goes here...</p>
-      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton1">View More</button>
-    </div>
-  </div>
+              <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <i class="uil uil-swatchbook text-2xl"></i>
+                <h2 class="text-lg font-bold">UI/UX <br>Designer</h2>
+                <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton1">View
+                  More</button>
+              </div>
+            </div>
 
-  <!-- Modal 1 -->
-  <div id="modal1" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-    <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-    <div class="modal-container bg-white w-1/2 p-4 rounded shadow-lg z-50">
-      <div class="modal-header flex justify-between items-center mb-4 relative">
-        <svg class="close-icon w-6 h-6 cursor-pointer fill-current text-gray-500 absolute top-0 right-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z"/>
-        </svg>
-        <h3 class="text-xl font-bold">Project Title 1</h3>
+            <!-- Modal 1 -->
+            <div id="modal1" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
+              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+                <div class="modal-header flex justify-between items-center mb-4 relative">
+                  <svg class="close-icon w-5 h-5 cursor-pointer fill-current text-gray-500 absolute top-0 right-0"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z" />
+                  </svg>
+                  <h3 class="text-lg font-bold m-auto text-center">UI/UX <br>Designer</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>I develop the user interface</p>
+                  </div>
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Web page development</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>I create UX element interactions</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>I position your company brand</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="max-w-md mx-auto my-8">
+              <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <i class="uil uil-swatchbook text-2xl"></i>
+                <h2 class="text-lg font-bold">Frontend <br>Developer</h2>
+                <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton2">View
+                  More</button>
+              </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div id="modal2" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
+              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+                <div class="modal-header flex justify-between items-center mb-4 relative">
+                  <svg class="close-icon w-6 h-6 cursor-pointer fill-current text-gray-500 absolute top-0 right-0"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z" />
+                  </svg>
+                  <h3 class="text-lg font-bold m-auto text-center">Frontend <br>Developer</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="max-w-md mx-auto my-8">
+              <div class="bg-gray-100 p-4 rounded-md shadow-md">
+                <i class="uil uil-swatchbook text-2xl"></i>
+                <h2 class="text-lg font-bold">Branding <br>Designer</h2>
+                <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton3">View
+                  More</button>
+              </div>
+            </div>
+
+
+
+            <!-- Modal 3 -->
+            <div id="modal3" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
+              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+                <div class="modal-header flex justify-between items-center mb-4 relative">
+                  <svg class="close-icon w-6 h-6 cursor-pointer fill-current text-gray-500 absolute top-0 right-0"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path
+                      d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z" />
+                  </svg>
+                  <h3 class="text-lg font-bold m-auto text-center">Branding <br>Designer</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="flex items-center mb-2">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                    </svg>
+                    <p>Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="modal-body">
-        <div class="flex items-center mb-2">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 1</p>
-        </div>
-        <div class="flex items-center mb-2">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 2</p>
-        </div>
-        <div class="flex items-center">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 3</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-   <!-- Project Card 2 -->
-   <div class="max-w-md mx-auto my-8">
-    <div class="bg-gray-100 p-4 rounded-md shadow-md">
-      <h2 class="text-xl font-bold">Project Title 2</h2>
-      <p class="mt-2">Project description goes here...</p>
-      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton2">View More</button>
-    </div>
-  </div>
-
-  <!-- Modal 2 -->
-  <div id="modal2" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-    <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-    <div class="modal-container bg-white w-1/2 p-4 rounded shadow-lg z-50">
-      <div class="modal-header flex justify-between items-center mb-4 relative">
-        <svg class="close-icon w-6 h-6 cursor-pointer fill-current text-gray-500 absolute top-0 right-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z"/>
-        </svg>
-        <h3 class="text-xl font-bold">Project Title 2</h3>
-      </div>
-      <div class="modal-body">
-        <div class="flex items-center mb-2">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 4</p>
-        </div>
-        <div class="flex items-center mb-2">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 5</p>
-        </div>
-        <div class="flex items-center">
-          <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-          </svg>
-          <p>Write-up 6</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Project Card 3 -->
-  <div class="max-w-md mx-auto my-8">
-    <div class="bg-gray-100 p-4 rounded-md shadow-md">
-      <h2 class="text-xl font-bold">Project Title 3</h2>
-      <p class="mt-2">Project description goes here...</p>
-      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" id="viewMoreButton3">View More</button>
-    </div>
-  </div>
-
-
-
-  <!-- Modal 3 -->
-  <div id="modal3" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-    <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-  <div class="modal-container bg-white w-1/2 p-4 rounded shadow-lg z-50">
-    <div class="modal-header flex justify-between items-center mb-4 relative">
-      <svg class="close-icon w-6 h-6 cursor-pointer fill-current text-gray-500 absolute top-0 right-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-        <path d="M14.95 5.364a1 1 0 011.414 1.414L11.414 10l4.95 4.95a1 1 0 11-1.414 1.414L10 11.414l-4.95 4.95a1 1 0 11-1.414-1.414L8.586 10l-4.95-4.95a1 1 0 111.414-1.414L10 8.586l4.95-4.95a1 1 0 011.414 0z"/>
-      </svg>
-      <h3 class="text-xl font-bold">Project Title 3</h3>
-    </div>
-    <div class="modal-body">
-      <div class="flex items-center mb-2">
-        <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-        </svg>
-        <p>Write-up 7</p>
-      </div>
-      <div class="flex items-center mb-2">
-        <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-        </svg>
-        <p>Write-up 8</p>
-      </div>
-      <div class="flex items-center">
-        <svg class="w-4 h-4 mr-2 fill-current text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
-        </svg>
-        <p>Write-up 9</p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-          
-
-
-
-
-</section>
+      <!-- section 7 -portfolio-->
+      <!-- wrapper -->
+      <div class="w-full h-[110vh] p-3" id="portfolio">
+        <!-- portfolio -->
+        <section class="w-full flex flex-col items-center justify-center pt-12">
+          <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
+            <h1 class="text-2xl font-bold">Portfolio</h1>
+            <h3 class="text-sm">What I offer</h3>
+          </div>
+          <!-- works -->
+          <!-- swipper-container -->
+          <div class="w-full mt-7 swiper mySwiper swiper_container">
+            <!-- swiper-wrapper -->
+            <div class=" w-full swiper-wrapper">
+              <!-- 1st -->
+              <div class="w-full swiper-slide">
+                <div class="w-[75%] h-[200px] m-auto bg-gray-700"></div>
+                <div class="w-full flex flex-col">
+                  <span class="w-full text-lg font-bold mb-3">Modern Website</span>
+                  <span class="w-full">Website adaptable to all devices, with UI components and animated
+                    interactions.</span>
+                  <button class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white"><a href="#">Demo<i
+                        class="uil uil-message ml-2"></i></a></button>
+                </div>
+              </div>
+              <!-- 2nd -->
+              <div class="w-full swiper-slide">
+                <div class="w-[75%] h-[200px] m-auto bg-red-700"></div>
+                <div class="w-full flex flex-col">
+                  <span class="w-full text-lg font-bold mb-3">Modern Website</span>
+                  <span class="w-full">Website adaptable to all devices, with UI components and animated
+                    interactions.</span>
+                  <button class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white"><a href="#">Demo<i
+                        class="uil uil-message ml-2"></i></a></button>
+                </div>
+              </div>
+              <!-- 3rd -->
+              <div class="w-full swiper-slide">
+                <div class="w-[75%] h-[200px] m-auto bg-yellow-400"></div>
+                <div class="w-full flex flex-col">
+                  <span class="w-full text-lg font-bold mb-3">Modern Website</span>
+                  <span class="w-full">Website adaptable to all devices, with UI components and animated
+                    interactions.</span>
+                  <button class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white"><a href="#">Demo<i
+                        class="uil uil-message ml-2"></i></a></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
       </div>
 
 
@@ -568,6 +659,8 @@
 
 
 
+<!-- swiper.js -->
+  <script src="../src/swiper-bundle.min.js"></script>
 
 
 <script>
@@ -646,35 +739,51 @@
   })
 
 
- // Open modal 1 when "View More" button 1 is clicked
- document.getElementById('viewMoreButton1').addEventListener('click', function() {
-      document.getElementById('modal1').classList.remove('hidden');
-    });
+  // Open modal 1 when "View More" button 1 is clicked
+  document.getElementById('viewMoreButton1').addEventListener('click', function () {
+    document.getElementById('modal1').classList.remove('hidden');
+  });
 
-    // Close modal 1 when close icon is clicked
-    document.querySelector('#modal1 .close-icon').addEventListener('click', function() {
-      document.getElementById('modal1').classList.add('hidden');
-    });
+  // Close modal 1 when close icon is clicked
+  document.querySelector('#modal1 .close-icon').addEventListener('click', function () {
+    document.getElementById('modal1').classList.add('hidden');
+  });
 
-    // Open modal 2 when "View More" button 2 is clicked
-    document.getElementById('viewMoreButton2').addEventListener('click', function() {
-      document.getElementById('modal2').classList.remove('hidden');
-    });
+  // Open modal 2 when "View More" button 2 is clicked
+  document.getElementById('viewMoreButton2').addEventListener('click', function () {
+    document.getElementById('modal2').classList.remove('hidden');
+  });
 
-    // Close modal 2 when close icon is clicked
-    document.querySelector('#modal2 .close-icon').addEventListener('click', function() {
-      document.getElementById('modal2').classList.add('hidden');
-    });
+  // Close modal 2 when close icon is clicked
+  document.querySelector('#modal2 .close-icon').addEventListener('click', function () {
+    document.getElementById('modal2').classList.add('hidden');
+  });
 
-    // Open modal 3 when "View More" button 3 is clicked
-    document.getElementById('viewMoreButton3').addEventListener('click', function() {
-      document.getElementById('modal3').classList.remove('hidden');
-    });
+  // Open modal 3 when "View More" button 3 is clicked
+  document.getElementById('viewMoreButton3').addEventListener('click', function () {
+    document.getElementById('modal3').classList.remove('hidden');
+  });
 
-    // Close modal 3 when close icon is clicked
-    document.querySelector('#modal3 .close-icon').addEventListener('click', function() {
-      document.getElementById('modal3').classList.add('hidden');
-    });
+  // Close modal 3 when close icon is clicked
+  document.querySelector('#modal3 .close-icon').addEventListener('click', function () {
+    document.getElementById('modal3').classList.add('hidden');
+  });
+
+
+  // initialize swipper.js
+  let swiper = new Swiper(".swiper_container", {
+    cssMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 </script>
+
 
 </html>
