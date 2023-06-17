@@ -592,7 +592,7 @@
           </div>
           <!-- works -->
           <!-- swipper-container -->
-          <div class="w-full h-fit mt-14 swiper mySwiper swiper_container">
+          <div class="w-full h-fit mt-14 swiper mySwiper swiper_container-portfolio">
             <!-- swiper-wrapper -->
             <div class=" w-full swiper-wrapper">
               <!-- 1st -->
@@ -646,7 +646,7 @@
             <button class="w-fit py-4 p-3 rounded-md bg-white text-black mt-5"><a href="#">Contact Me<i
               class="uil uil-message ml-2"></i></a></button>
           </div>
-          <div class="w-[85%] m-auto h-[55%]" style="background: url(../src/imgs/contactMe-img.png); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+          <div class="w-[85%] m-auto h-[55%]" style="background: url(../src/imgs/); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
         </section>
         <!-- testimonials -->
         <section class="w-full h-fit mt-36">
@@ -655,46 +655,56 @@
             <h3 class="text-sm">My clients saying</h3>
           </div>
           <!-- info -->
-          <!-- 1 -->
-          <div class="w-full flex flex-col mt-10">
-            <div class="w-full gird grid-rows-3">
+          <!-- swiper.js container -->
+          <div class=" swiper mySwiper w-full swiper_container-testimonial">
+            <!-- swiper.js wrapper -->
+            <div class="swiper-wrapper w-full">
+              <!-- 1 -->
+              <div class="w-full flex flex-col mt-10 mb-16 swiper-slide">
+              <div class="w-full gird grid-rows-3">
                 <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial1.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center">
+                <span class="flex flex-col justify-center items-center mt-2">
                   <h3 class="font-bold text-xl">Sara Smith</h3>
                   <p>Client</p>
                 </span>
-              <span class="w-fit m-auto text-lg flex justify-center items-center"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+              <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
               </span>
             </div>
             <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
           </div>
-          <!-- 1 -->
-          <div class="w-full flex flex-col mt-7">
+          <!-- 2 -->
+          <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
             <div class="w-full gird grid-rows-3">
                 <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center">
+                <span class="flex flex-col justify-center items-center mt-2">
                   <h3 class="font-bold text-xl">Matt Robinson</h3>
                   <p>Client</p>
                 </span>
-              <span class="w-fit m-auto text-lg flex justify-center items-center"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+                <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
               </span>
             </div>
             <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
           </div>
-          <!-- 1 -->
-          <div class="w-full flex flex-col mt-7">
+          <!-- 3 -->
+          <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
             <div class="w-full gird grid-rows-3">
                 <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center">
+                <span class="flex flex-col justify-center items-center mt-2">
                   <h3 class="font-bold text-xl">Raul Harris</h3>
                   <p>Client</p>
                 </span>
-              <span class="w-fit m-auto text-lg flex justify-center items-center"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+              <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
               </span>
             </div>
             <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
           </div>
+        </div>
+        <!-- add pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
         </section>
+        <!-- contact me -->
+
       </div>
 
 
@@ -848,7 +858,7 @@
 
 
   // initialize swipper.js
-  let swiper = new Swiper(".swiper_container", {
+  let swiperPortfolio = new Swiper(".swiper_container-portfolio", {
     cssMode: true,
     loop: true,
     navigation: {
@@ -862,6 +872,28 @@
     mousewheel: true,
     keyboard: true,
   });
+
+  // initialize swipper.js
+  let swiperTestimonial = new Swiper(".swiper_container-testimonial", {
+    cssMode: true,
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    breakpoints:{
+      568:{
+        slidesPerView: 2,
+      }
+    }
+    
+  });
+
+ 
 </script>
 
 
