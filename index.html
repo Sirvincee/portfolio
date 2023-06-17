@@ -27,6 +27,10 @@
     .qualification_active[data-content] {
       display: block;
     }
+   .swiper-button-prev::after,
+   .swiper-button-next::after{
+    content: '';
+   } 
   </style>
 </head>
 
@@ -581,7 +585,7 @@
             <div class=" w-full swiper-wrapper">
               <!-- 1st -->
               <div class="w-full swiper-slide">
-                <div class="w-[75%] h-[200px] m-auto bg-gray-700"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-gray-700"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
@@ -592,7 +596,7 @@
               </div>
               <!-- 2nd -->
               <div class="w-full swiper-slide">
-                <div class="w-[75%] h-[200px] m-auto bg-red-700"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-red-700"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
@@ -603,7 +607,7 @@
               </div>
               <!-- 3rd -->
               <div class="w-full swiper-slide">
-                <div class="w-[75%] h-[200px] m-auto bg-yellow-400"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-yellow-400"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
@@ -613,8 +617,12 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+              <i class="uil uil-angle-right-b swiper_portfolio-icon text-3xl font-bold right-5 ml-6"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="uil uil-angle-left-b  swiper_portfolio-icon text-3xl left-5 mr-6"></i>
+            </div>
             <div class="swiper-pagination"></div>
           </div>
         </section>
@@ -773,12 +781,14 @@
   // initialize swipper.js
   let swiper = new Swiper(".swiper_container", {
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
     mousewheel: true,
     keyboard: true,
