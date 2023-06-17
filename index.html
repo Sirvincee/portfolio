@@ -31,6 +31,15 @@
    .swiper-button-next::after{
     content: '';
    } 
+   button:focus,
+   a:focus,
+   input[type="button"]:focus,
+   input[type="submit"]:focus,
+   input[type="reset"]:focus,
+   [class^="btn"]:focus{
+    outline: none;
+   }
+
   </style>
 </head>
 
@@ -585,7 +594,7 @@
             <div class=" w-full swiper-wrapper">
               <!-- 1st -->
               <div class="w-full swiper-slide">
-                <div class="w-[80%] h-[200px] m-auto bg-gray-700"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-gray-700 rounded-md"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
@@ -596,7 +605,7 @@
               </div>
               <!-- 2nd -->
               <div class="w-full swiper-slide">
-                <div class="w-[80%] h-[200px] m-auto bg-red-700"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-red-700 rounded-md"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
@@ -607,7 +616,7 @@
               </div>
               <!-- 3rd -->
               <div class="w-full swiper-slide">
-                <div class="w-[80%] h-[200px] m-auto bg-yellow-400"></div>
+                <div class="w-[80%] h-[200px] m-auto bg-yellow-400 rounded-md"></div>
                 <div class="w-full flex flex-col">
                   <span class="w-full text-lg font-bold mb-3">Modern Website</span>
                   <span class="w-full">Website adaptable to all devices, with UI components and animated
