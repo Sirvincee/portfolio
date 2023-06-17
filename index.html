@@ -27,22 +27,23 @@
     .qualification_active[data-content] {
       display: block;
     }
-   .swiper-button-prev::after,
-   .swiper-button-next::after{
-    content: '';
-   } 
-   button:focus,
-   a:focus,
-   input[type="button"]:focus,
-   input[type="submit"]:focus,
-   input[type="reset"]:focus,
-   .swiper_portfolio-icon:focus,
-   .swiper-button-prev:focus,
-   .swiper-button-next:focus,
-   [class^="btn"]:focus{
-    outline: none;
-   }
 
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      content: '';
+    }
+
+    button:focus,
+    a:focus,
+    input[type="button"]:focus,
+    input[type="submit"]:focus,
+    input[type="reset"]:focus,
+    .swiper_portfolio-icon:focus,
+    .swiper-button-prev:focus,
+    .swiper-button-next:focus,
+    [class^="btn"]:focus {
+      outline: none;
+    }
   </style>
 </head>
 
@@ -67,8 +68,8 @@
                 href="#services" class="navLink">Services</a></li>
             <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-scenery"></i><a
                 href="#portfolio" class="navLink">Portfolio</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-message"></i><a href="#"
-                class="navLink">Contact Me</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-message"></i><a
+                href="#contactMe" class="navLink">Contact Me</a></li>
           </span>
         </ul>
         <div class="w-full flex justify-end p-1.5 text-2xl"><i class="uil uil-times cursor-pointer app-icon"
@@ -590,6 +591,7 @@
             <h1 class="text-2xl font-bold">Portfolio</h1>
             <h3 class="text-sm">What I offer</h3>
           </div>
+
           <!-- works -->
           <!-- swipper-container -->
           <div class="w-full h-fit mt-14 swiper mySwiper swiper_container-portfolio">
@@ -638,16 +640,22 @@
             <div class="swiper-pagination"></div>
           </div>
         </section>
+
+        <!-- section 8 -->
         <!-- have a new project? -->
         <section class="w-full h-[83vh] mt-20 bg-purple-800">
           <div class="w-[85%] m-auto h-[45%] flex flex-col justify-center items-center py-5 text-white">
             <h2 class="font-bold text-center p-4 text-xl mt-7">You have a new project?</h2>
             <p class="text-center p-4">Contact me now and get 30% discount on your project.</p>
             <button class="w-fit py-4 p-3 rounded-md bg-white text-black mt-5"><a href="#">Contact Me<i
-              class="uil uil-message ml-2"></i></a></button>
+                  class="uil uil-message ml-2"></i></a></button>
           </div>
-          <div class="w-[85%] m-auto h-[55%]" style="background: url(../src/imgs/); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
+          <div class="w-[85%] m-auto h-[55%]"
+            style="background: url(../src/imgs/); background-repeat: no-repeat; background-position: center; background-size: cover;">
+          </div>
         </section>
+
+        <!-- section 9 -->
         <!-- testimonials -->
         <section class="w-full h-fit mt-36">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
@@ -661,49 +669,125 @@
             <div class="swiper-wrapper w-full">
               <!-- 1 -->
               <div class="w-full flex flex-col mt-10 mb-16 swiper-slide">
-              <div class="w-full gird grid-rows-3">
-                <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial1.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center mt-2">
-                  <h3 class="font-bold text-xl">Sara Smith</h3>
-                  <p>Client</p>
-                </span>
-              <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
-              </span>
+                <div class="w-full gird grid-rows-3">
+                  <div class="w-[90px] h-[90px] m-auto rounded-full"
+                    style="background: url(../src/imgs/testimonial1.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <span class="flex flex-col justify-center items-center mt-2">
+                    <h3 class="font-bold text-xl">Sara Smith</h3>
+                    <p>Client</p>
+                  </span>
+                  <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+                  </span>
+                </div>
+                <p>I get good impression, I carry out my project with all possible quality and attention and support 24
+                  hours a day.</p>
+              </div>
+              <!-- 2 -->
+              <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
+                <div class="w-full gird grid-rows-3">
+                  <div class="w-[90px] h-[90px] m-auto rounded-full"
+                    style="background: url(../src/imgs/testimonial2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <span class="flex flex-col justify-center items-center mt-2">
+                    <h3 class="font-bold text-xl">Matt Robinson</h3>
+                    <p>Client</p>
+                  </span>
+                  <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+                  </span>
+                </div>
+                <p>I get good impression, I carry out my project with all possible quality and attention and support 24
+                  hours a day.</p>
+              </div>
+              <!-- 3 -->
+              <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
+                <div class="w-full gird grid-rows-3">
+                  <div class="w-[90px] h-[90px] m-auto rounded-full"
+                    style="background: url(../src/imgs/testimonial3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                  </div>
+                  <span class="flex flex-col justify-center items-center mt-2">
+                    <h3 class="font-bold text-xl">Raul Harris</h3>
+                    <p>Client</p>
+                  </span>
+                  <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i
+                      class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
+                  </span>
+                </div>
+                <p>I get good impression, I carry out my project with all possible quality and attention and support 24
+                  hours a day.</p>
+              </div>
             </div>
-            <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
+            <!-- add pagination -->
+            <div class="swiper-pagination"></div>
           </div>
-          <!-- 2 -->
-          <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
-            <div class="w-full gird grid-rows-3">
-                <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center mt-2">
-                  <h3 class="font-bold text-xl">Matt Robinson</h3>
-                  <p>Client</p>
-                </span>
-                <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
-              </span>
-            </div>
-            <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
-          </div>
-          <!-- 3 -->
-          <div class="w-full flex flex-col mt-7 mb-16 swiper-slide">
-            <div class="w-full gird grid-rows-3">
-                <div class="w-[90px] h-[90px] m-auto rounded-full" style="background: url(../src/imgs/testimonial3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;"></div>
-                <span class="flex flex-col justify-center items-center mt-2">
-                  <h3 class="font-bold text-xl">Raul Harris</h3>
-                  <p>Client</p>
-                </span>
-              <span class="w-fit m-auto text-lg flex justify-center items-center mb-2"><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
-              </span>
-            </div>
-            <p>I get good impression, I carry out my project with all possible quality and attention and support 24 hours a day.</p>
-          </div>
-        </div>
-        <!-- add pagination -->
-        <div class="swiper-pagination"></div>
-        </div>
         </section>
-        <!-- contact me -->
+
+        <!-- section 10-->
+        <!-- wrapper -->
+        <div class="w-full h-[110vh] p-3 mt-10" id="contactMe">
+          <!-- contact me -->
+          <section class="w-full flex flex-col items-center justify-center pt-12">
+            <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
+              <h1 class="text-2xl font-bold">Contact Me</h1>
+              <h3 class="text-sm">Get in touch</h3>
+            </div>
+            <!-- details -->
+            <div class="w-full mt-10">
+              <!-- tel -->
+              <div class="w-[45%] flex items-center mb-5">
+                <span class="w-fit"><i class="uil uil-phone text-3xl"></i></span>
+                  <span class="w-full flex flex-col ml-5">
+                    <span class="w-full font-bold text-xl">Call Me</span>
+                    <span class="w-full">+2349057759592</span>
+                  </span>
+              </div>
+              <!-- email-->
+              <div class="w-[45%] flex items-center mb-5">
+                <span class="w-fit"><i class="uil uil-envelope text-3xl"></i></span>
+                  <span class="w-full flex flex-col ml-5">
+                    <span class="w-full font-bold text-xl">Email</span>
+                    <span class="w-full">atunwavincent1999@gmail.com</span>
+                  </span>
+                </div>
+              <!-- location-->
+              <div class="w-full flex items-center mb-5">
+                <span class="w-fit"><i class="uil uil-map-marker text-3xl"></i></span>
+                  <span class="w-full flex flex-col ml-5">
+                    <span class="w-full font-bold text-xl">Location</span>
+                    <span class="w-full">Alasia, Lagos, Nigeria.</span>
+                  </span>
+                </div>
+              <!-- form -->
+              <form action="" class="">
+                <div class="w-full mb-3">
+                  <input type="text" placeholder="Name" class="text-[16px] outline-none border-none text-black w-full h-10 p-2">
+                </div>
+                <div class="w-full mb-3">
+                  <input type="email" placeholder="Email" class="text-[16px] outline-none border-none w-full h-10 p-2">
+                </div>
+                <div class="w-full mb-3">
+                  <input type="text" placeholder="Project" class="text-[16px] outline-none border-none w-full h-10 p-2">
+                </div>
+                <div class="w-full">
+                  <textarea name="message" id="" cols="0" rows="7" placeholder="Leave a message" class="w-[80%] outline-none text-[16px] border-[0.2px] border-gray-200 p-2"></textarea>
+                </div>
+                <button type="submit" class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white mb-10">Send Message
+                  <i
+                  class="uil uil-message ml-2"></i>
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+
+
+
+
 
       </div>
 
@@ -747,7 +831,7 @@
 
 
 <!-- swiper.js -->
-  <script src="../src/swiper-bundle.min.js"></script>
+<script src="../src/swiper-bundle.min.js"></script>
 
 
 <script>
@@ -885,15 +969,15 @@
       clickable: true,
       dynamicBullets: true,
     },
-    breakpoints:{
-      568:{
+    breakpoints: {
+      568: {
         slidesPerView: 2,
       }
     }
-    
+
   });
 
- 
+
 </script>
 
 
