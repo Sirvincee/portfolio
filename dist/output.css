@@ -612,6 +612,30 @@ video {
   top: 0px;
 }
 
+.bottom-\[-190px\] {
+  bottom: -190px;
+}
+
+.bottom-\[-170px\] {
+  bottom: -170px;
+}
+
+.bottom-\[-210px\] {
+  bottom: -210px;
+}
+
+.bottom-\[-215px\] {
+  bottom: -215px;
+}
+
+.bottom-\[-225px\] {
+  bottom: -225px;
+}
+
+.bottom-\[-300px\] {
+  bottom: -300px;
+}
+
 .z-50 {
   z-index: 50;
 }
