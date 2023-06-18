@@ -9,6 +9,7 @@
   <!-- swiper.js -->
   <link rel="stylesheet" href="../src/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     .accordion .accordion-arrow {
@@ -82,7 +83,7 @@
     </header>
 
     <!-- section 2 -->
-    <main class="w-full h-[100vh] px-3" id="home">
+    <main class="w-full h-[100vh] px-3" data-aos="zoom-in"  id="home">
       <section class="w-full flex items-center justify-center relative pt-20">
         <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0">
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
@@ -125,7 +126,7 @@
     <div class="w-full h-[100vh] px-3" id="aboutMe">
       <!-- section 3 -->
       <!-- about me -->
-      <section class="w-full flex flex-col items-center justify-center pt-12">
+      <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="zoom-in">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">About Me</h1>
           <h3 class="text-sm">My Introduction</h3>
@@ -171,7 +172,7 @@
     <div class="w-full h-[110vh]" id="skills">
       <!-- section 4 -->
       <!-- skills -->
-      <section class="w-full flex flex-col items-center justify-center pt-12">
+      <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="zoom-in">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">Skills</h1>
           <h3 class="text-sm">My Technical Level</h3>
@@ -818,6 +819,10 @@
 
 <!-- swiper.js -->
 <script src="../src/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 <script>
