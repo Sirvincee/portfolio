@@ -929,23 +929,27 @@
 
   });
 
-  // animate on scroll for clickable navbars
-  // Listen for click events on navbar links
-  document.getElementById('#aboutMe'),
-  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    // Prevent default link behavior
     e.preventDefault();
 
-    // Get the target section
-    const section = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute('href'));
 
-    // Scroll to the section
-    section.scrollIntoView({
-      behavior: 'smooth',
-      duration: 300
+    target.scrollIntoView({
+      behavior: 'smooth'
     });
 
+    // Set the scrolling duration using the scroll-behavior property
+    target.style.scrollBehavior = 'smooth';
+    target.style.msScrollBehavior = 'smooth';
+    target.style.webkitScrollBehavior = 'smooth';
+
+    // Remove the scroll-behavior property after the scrolling has finished
+    setTimeout(() => {
+      target.style.scrollBehavior = 'auto';
+      target.style.msScrollBehavior = 'auto';
+      target.style.webkitScrollBehavior = 'auto';
+    }, 0); // Adjust the delay to match the duration of the animation
   });
 });
 
