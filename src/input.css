@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500&display=swap');
+
 
 
 .border{
@@ -22,3 +22,24 @@
 .showMenu{
     @apply bottom-10
 }
+
+#viewMoreButton1:hover .uil-arrow-right {
+    transform: translateX(5px);
+    transition: all;
+    transition-duration: .3s;
+  }
+  #viewMoreButton2:hover .uil-arrow-right {
+    transform: translateX(5px);
+    transition: all;
+    transition-duration: .3s;
+  }
+  #viewMoreButton3:hover .uil-arrow-right {
+    transform: translateX(5px);
+    transition: all;
+    transition-duration: .3s;
+  }
+  #viewMoreButton3:hover .uil-arrow-right{
+    transform: translateX(5px);
+    transition: all;
+    transition-duration: .3s; 
+  }
