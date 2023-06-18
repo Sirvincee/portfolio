@@ -87,7 +87,7 @@
     </header>
 
     <!-- section 2 -->
-    <main class="w-full h-[100vh] px-3" id="home">
+    <main class="w-full h-[100vh] px-3" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
       <section class="w-full flex items-center justify-center relative pt-20">
         <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0">
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
@@ -131,7 +131,7 @@
     <div class="w-full h-[100vh] px-3" id="aboutMe">
       <!-- section 3 -->
       <!-- about me -->
-      <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+      <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">About Me</h1>
           <h3 class="text-sm">My Introduction</h3>
@@ -177,7 +177,7 @@
     <div class="w-full h-[110vh]" id="skills">
       <!-- section 4 -->
       <!-- skills -->
-      <section class="w-full flex flex-col items-center justify-center pt-12 px-2" data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+      <section class="w-full flex flex-col items-center justify-center pt-12 px-2" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">Skills</h1>
           <h3 class="text-sm">My Technical Level</h3>
@@ -290,7 +290,7 @@
       <!-- section 5 -->
       <!-- qualification -->
       <!-- wrapper -->
-      <section class="w-full mt-16 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+      <section class="w-full mt-16 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">Qualification</h1>
           <h3 class="text-sm">My personal journey</h3>
@@ -408,7 +408,7 @@
       <!-- wrapper -->
       <div class="w-full h-[110vh]" id="services">
         <!-- services -->
-        <section class="w-full flex flex-col items-center justify-center pt-14"  data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+        <section class="w-full flex flex-col items-center justify-center pt-14"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Services</h1>
             <h3 class="text-sm">What I offer</h3>
@@ -544,7 +544,7 @@
       <!-- wrapper -->
       <div class="w-full h-fit" id="portfolio">
         <!-- portfolio -->
-        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2" data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Portfolio</h1>
             <h3 class="text-sm">What I offer</h3>
@@ -614,7 +614,7 @@
 
         <!-- section 9 -->
         <!-- testimonials -->
-        <section class="w-full h-fit mt-36 px-3"  data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+        <section class="w-full h-fit mt-36 px-3"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Testimonials</h1>
             <h3 class="text-sm">My clients saying</h3>
@@ -688,7 +688,7 @@
         <!-- wrapper -->
         <div class="w-full h-[110vh] mt-10" id="contactMe">
           <!-- contact me -->
-          <section class="w-full flex flex-col items-center justify-center pt-12 px-3" data-aos="fade-down" data-aos-duration="900" data-aos-once="false">
+          <section class="w-full flex flex-col items-center justify-center pt-12 px-3" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
             <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
               <h1 class="text-2xl font-bold">Contact Me</h1>
               <h3 class="text-sm">Get in touch</h3>
@@ -931,7 +931,8 @@
 
   // animate on scroll for clickable navbars
   // Listen for click events on navbar links
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  document.getElementById('#aboutMe'),
+  document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     // Prevent default link behavior
     e.preventDefault();
@@ -945,10 +946,6 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
       duration: 300
     });
 
-    // Trigger the AOS animation after the scroll has completed
-    setTimeout(() => {
-      AOS.refresh();
-    }, 900); // Adjust this delay to match the duration of the AOS animation
   });
 });
 
