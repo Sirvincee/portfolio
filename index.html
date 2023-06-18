@@ -929,6 +929,27 @@
 
   });
 
+  // animate on scroll for clickable navbars
+  // Listen for click events on navbar links
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    // Prevent default link behavior
+    e.preventDefault();
+
+    // Get the target section
+    const section = document.querySelector(this.getAttribute('href'));
+
+    // Scroll to the section
+    section.scrollIntoView({
+      behavior: 'smooth'
+    });
+
+    // Trigger the AOS animation after the scroll has completed
+    setTimeout(() => {
+      AOS.refresh();
+    }, 1000); // Adjust this delay to match the duration of the AOS animation
+  });
+});
 
 </script>
 
