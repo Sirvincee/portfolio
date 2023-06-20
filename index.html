@@ -89,9 +89,9 @@
     </header>
 
     <!-- section 2 -->
-    <main class="w-full h-[100vh] px-3" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+    <main class="w-full h-[100vh] px-3 md:flex md:flex-row-reverse md:h-[50vh]" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
       <section class="w-full flex items-center justify-center relative pt-20">
-        <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0">
+        <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0 md:hidden">
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
@@ -114,7 +114,12 @@
           </svg></div>
       </section>
       <!-- description -->
-      <div class="w-full px-2 mt-10">
+      <div class="w-full px-2 mt-10 md:flex md:flex-col justify-center md:w-[90%] md:ml-7">
+        <div class="hidden w-fit absolute flex-col text-[1.25rem] grid-cols-3 left-2 md:flex">
+          <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
+          <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
+          <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
+        </div>
         <h1 class="text-3xl font-bold">Hi, I'am Vince</h1>
         <h3 class="text-2xl font-bold">Frontend Developer</h3>
         <h4 class="text-lg  my-4 mb-5">High level experience in web design and development knowledge, producing quality
@@ -130,7 +135,7 @@
     </main>
 
     <!-- section 3 wrapper -->
-    <div class="w-full h-[100vh] px-3" id="aboutMe">
+    <div class="w-full h-[100vh] px-3 md:h-[50vh] md:m-auto" id="aboutMe">
       <!-- section 3 -->
       <!-- about me -->
       <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
@@ -138,11 +143,13 @@
           <h1 class="text-2xl font-bold">About Me</h1>
           <h3 class="text-sm">My Introduction</h3>
         </div>
-        <!-- about img -->
-        <div class="w-[70%] h-[150px] m-auto rounded-md mt-12 bg-purple-800"></div>
+        <!-- wrapper -->
+        <div class="md:grid md:grid-cols-2">
+          <!-- about img -->
+          <div class="w-[70%] h-[150px] m-auto rounded-md mt-12 bg-purple-800 borderlight"></div>
         <!-- about info -->
-        <div class="w-full mt-6">
-          <h4 class="text-lg text-center px-1">Web developer, with extensive knowledge and years of experience working
+        <div class="w-full mt-6 md:w-[90%] md:m-auto md:mt-6">
+          <h4 class="text-lg text-center px-1 md:text-left">Web developer, with extensive knowledge and years of experience working
             in
             web technologies and UI/UX design, delivering quality work. </h4>
           <!-- experience wrapper -->
@@ -169,7 +176,8 @@
           <!-- dowload cv -->
           <div class="w-full flex justify-center items-center mt-5">
             <button class="w-fit mx-auto py-4 p-3 rounded-md bg-purple-800 text-white"><a download=""
-                href="#"></a>Download CV<i class="uil uil-download-alt ml-2"></i></i></a></button>
+              href="#"></a>Download CV<i class="uil uil-download-alt ml-2"></i></i></a></button>
+            </div>
           </div>
         </div>
       </section>
@@ -179,7 +187,7 @@
     <div class="w-full h-[110vh]" id="skills">
       <!-- section 4 -->
       <!-- skills -->
-      <section class="w-full flex flex-col items-center justify-center pt-12 px-2" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+      <section class="w-full flex flex-col items-center justify-center pt-12 px-2 md:w-[95%] md:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
           <h1 class="text-2xl font-bold">Skills</h1>
           <h3 class="text-sm">My Technical Level</h3>
@@ -188,7 +196,7 @@
         <!-- frontend -->
         <!-- accordion-->
         <div class="w-full my-8">
-          <div class="border rounded-md overflow-hidden">
+          <div class="border rounded-md overflow-hidden md:grid md:grid-cols-2">
             <!-- Coding Skills Accordion -->
             <div class="accordion ">
               <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
@@ -244,7 +252,7 @@
             </div>
 
             <!-- Design Skills Accordion -->
-            <div class="accordion mt-10">
+            <div class="accordion mt-10 md:mt-0">
               <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
                 <span class="text-2xl"><i class="uil uil-swatchbook"></i></span>
                 <span class="flex flex-col">
@@ -311,7 +319,7 @@
         </div>
         <!-- education/works data -->
         <!-- wrapper -->
-        <div class="w-full">
+        <div class="w-full md:w-[80%] md:m-auto">
           <!-- education/works data -->
           <!-- qualification section 1 -->
           <div class="w-full mt-7 qualification_content qualification_active" data-content id="education">
@@ -408,9 +416,9 @@
       </section>
       <!-- section 6 - services -->
       <!-- wrapper -->
-      <div class="w-full h-[110vh]" id="services">
+      <div class="w-full h-[110vh] md:h-[50vh]" id="services">
         <!-- services -->
-        <section class="w-full flex flex-col items-center justify-center pt-14"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+        <section class="w-full flex flex-col items-center justify-center pt-14 md:w-[90%] md:m-auto"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Services</h1>
             <h3 class="text-sm">What I offer</h3>
@@ -544,9 +552,9 @@
 
       <!-- section 7 -portfolio-->
       <!-- wrapper -->
-      <div class="w-full h-fit" id="portfolio">
+      <div class="w-full h-fit md:h-[70vh] md:mt-28" id="portfolio">
         <!-- portfolio -->
-        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2 md:h-full md:my-auto md:w-[60%] md:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Portfolio</h1>
             <h3 class="text-sm">What I offer</h3>
@@ -603,15 +611,17 @@
 
         <!-- section 8 -->
         <!-- have a new project? -->
-        <section class="w-full h-[83vh] mt-20 bg-purple-800">
+        <section class="w-full h-[83vh] mt-20 bg-purple-800 borderlight md:h-[50vh] md:flex md:relative">
           <div class="w-[85%] m-auto h-[45%] flex flex-col justify-center items-center py-5 text-white">
             <h2 class="font-bold text-center p-4 text-2xl mt-7">You have a new project?</h2>
             <p class="text-center p-4">Contact me now and get 30% discount on your project.</p>
             <button class="w-fit py-4 p-3 rounded-md bg-white text-black mt-5"><a href="#contactMe">Contact Me<i
                   class="uil uil-message ml-2"></i></a></button>
           </div>
-          <div class="w-[85%] m-auto h-[55%]"
-            style="background: url(../src/imgs/contactMe-img.png); background-repeat: no-repeat; background-position: center; background-size: contain;">
+          <div class="w-[85%] m-auto h-[55%] md:w-[85%] md:h-full md:flex md:items-end">
+            <div class="h-full w-full md:h-[80%] md:w-full"
+              style="background: url(../src/imgs/contactMe-img.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            </div>
           </div>
         </section>
 
