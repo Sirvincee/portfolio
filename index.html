@@ -120,8 +120,8 @@
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
         </div>
-        <h1 class="text-3xl font-bold">Hi, I'am Vince</h1>
-        <h3 class="text-2xl font-bold">Frontend Developer</h3>
+        <h1 class="text-3xl font-bold typewriter" id="intro"></h1>
+        <h3 class="text-2xl font-bold typewriter" id="description"></h3>
         <h4 class="text-lg  my-4 mb-5">High level experience in web design and development knowledge, producing quality
           work.</h4>
 
@@ -184,7 +184,7 @@
     </div>
 
     <!-- section 4 wrapper -->
-    <div class="w-full h-[110vh]" id="skills">
+    <div class="w-full h-fit" id="skills">
       <!-- section 4 -->
       <!-- skills -->
       <section class="w-full flex flex-col items-center justify-center pt-12 px-2 md:w-[95%] md:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
@@ -414,9 +414,10 @@
           </div>
         </div>
       </section>
+    </div>
       <!-- section 6 - services -->
       <!-- wrapper -->
-      <div class="w-full h-[110vh] md:h-[50vh]" id="services">
+      <div class="w-full h-[110vh] mt-20 md:h-[50vh]" id="services">
         <!-- services -->
         <section class="w-full flex flex-col items-center justify-center pt-14 md:w-[90%] md:m-auto"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
@@ -608,6 +609,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </section>
+      </div>
 
         <!-- section 8 -->
         <!-- have a new project? -->
@@ -754,6 +756,10 @@
               </form>
             </div>
           </section>
+          <!-- <div class="w-full h-[20vh] relative borderlight">
+            <div id="typing-text" class="text-xl font-mono overflow-hidden whitespace-nowrap border-r-2 border-gray-900"></div>
+            <div class="absolute top-0 bottom-0 right-0 bg-white w-2 pointer-events-none"></div>
+          </div> -->
         </div>
 
         <!-- section 11-footer -->
@@ -784,8 +790,6 @@
               <!-- <div class="borderlight fixed right-1"><i class="uil uil-arrow-right"></i></div> -->
           </footer>
         </div>
-        </div>
-      </div>
 </body>
 
 
@@ -968,6 +972,51 @@
   });
 });
 
+// typing text
+// Hi' I'm Vince
+const intro = document.getElementById('intro');
+    const description = document.getElementById('description');
+    const phrases = [
+      "a Frontend developer",
+      "UI/UX Designer",
+      "Branding Designer"
+    ];
+    let currentPhraseIndex = 0;
+    let currentCharacterIndex = 0;
+    let typing = true;
+
+    function typeWriterEffect() {
+      const currentPhrase = phrases[currentPhraseIndex];
+
+      if (currentCharacterIndex < currentPhrase.length && typing) {
+        description.textContent += currentPhrase.charAt(currentCharacterIndex);
+        currentCharacterIndex++;
+        setTimeout(typeWriterEffect, 100); // Delay between typing each character
+      } else {
+        typing = false;
+        setTimeout(erasePhrase, 1000); // Delay before erasing the phrase
+      }
+    }
+
+    function erasePhrase() {
+      const currentPhrase = phrases[currentPhraseIndex];
+
+      if (currentCharacterIndex >= 0 && !typing) {
+        description.textContent = currentPhrase.substring(0, currentCharacterIndex);
+        currentCharacterIndex--;
+        setTimeout(erasePhrase, 50); // Delay between erasing each character
+      } else {
+        currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+        currentCharacterIndex = 0;
+        typing = true;
+        setTimeout(typeWriterEffect, 1000); // Delay before typing the next phrase
+      }
+    }
+
+    setTimeout(() => {
+      typeWriterEffect();
+    }, 1000); // Delay before starting the typewriting effect
+    
 </script>
 
 
