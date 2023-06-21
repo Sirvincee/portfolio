@@ -43,8 +43,5 @@
     transition: all;
     transition-duration: .3s; 
   }
-  
-.cursor {
-  border-right: none;
-}
+
 

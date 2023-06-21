@@ -121,7 +121,9 @@
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
         </div>
         <h1 class="text-3xl font-bold typewriter" id="intro"></h1>
-        <h3 class="text-2xl font-bold typewriter" id="description"></h3>
+        <h3 class="text-2xl font-bold typewriter" id="description">
+          <span id="staticLetter">a</span> <span id="dynamicText"></span>
+        </h3>
         <h4 class="text-lg  my-4 mb-5">High level experience in web design and development knowledge, producing quality
           work.</h4>
 
@@ -975,9 +977,11 @@
 // typing text
 // Hi' I'm Vince
 const intro = document.getElementById('intro');
-    const description = document.getElementById('description');
+    const staticLetter = document.getElementById('staticLetter');
+    const dynamicText = document.getElementById('dynamicText');
+    const introText = "Hi, I'm Vince";
     const phrases = [
-      "a Frontend developer",
+      "Frontend Developer",
       "UI/UX Designer",
       "Branding Designer"
     ];
@@ -989,7 +993,7 @@ const intro = document.getElementById('intro');
       const currentPhrase = phrases[currentPhraseIndex];
 
       if (currentCharacterIndex < currentPhrase.length && typing) {
-        description.textContent += currentPhrase.charAt(currentCharacterIndex);
+        dynamicText.textContent += currentPhrase.charAt(currentCharacterIndex);
         currentCharacterIndex++;
         setTimeout(typeWriterEffect, 100); // Delay between typing each character
       } else {
@@ -1002,7 +1006,7 @@ const intro = document.getElementById('intro');
       const currentPhrase = phrases[currentPhraseIndex];
 
       if (currentCharacterIndex >= 0 && !typing) {
-        description.textContent = currentPhrase.substring(0, currentCharacterIndex);
+        dynamicText.textContent = currentPhrase.substring(0, currentCharacterIndex);
         currentCharacterIndex--;
         setTimeout(erasePhrase, 50); // Delay between erasing each character
       } else {
@@ -1013,9 +1017,21 @@ const intro = document.getElementById('intro');
       }
     }
 
-    setTimeout(() => {
-      typeWriterEffect();
-    }, 1000); // Delay before starting the typewriting effect
+    function showIntro() {
+      intro.textContent += introText.charAt(currentCharacterIndex);
+      currentCharacterIndex++;
+
+      if (currentCharacterIndex < introText.length) {
+        setTimeout(showIntro, 100); // Delay between typing each character
+      } else {
+        currentCharacterIndex = 0;
+        setTimeout(() => {
+          typeWriterEffect();
+        }, 1000); // Delay before starting the typewriting effect
+      }
+    }
+
+    showIntro(); // Start showing the intro paragraph
     
 </script>
 
