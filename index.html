@@ -59,44 +59,44 @@
   <div class="w-full h-[100vh]">
 
     <!-- section 1 -->
-    <header class="w-full h-fit fixed bottom-0 left-0 z-50">
-      <nav class="w-full navbar bottom-[-200px] absolute bg-white transition-all duration-300 ease-out" id="navMenu">
-        <ul class="text-lg">
+    <header class="w-full h-fit fixed bottom-0 left-0 z-50 lg:top-0 lg:flex lg:flex-row-reverse lg:h-[10vh]">
+      <nav class="w-full navbar bottom-[-200px] absolute bg-white transition-all duration-300 ease-out lg:static lg:h-full lg:pt-4 lg:px-3 2xl:px-20" id="navMenu">
+        <ul class="text-lg lg:flex">
           <span class="w-full flex justify-between items-center">
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-estate text-lg"></i><a
-                href="#home" class="navLink">Home</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-user"></i><a
-                href="#aboutMe" class="navLink">About</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-file-alt"></i><a
-                href="#skills" class="navLink">Skills</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-estate text-lg lg:hidden"></i><a
+                href="#home" class="navLink lg:text-base 2xl:text-lg">Home</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-user  lg:hidden"></i><a
+                href="#aboutMe" class="navLink lg:text-base 2xl:text-lg">About</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-file-alt  lg:hidden"></i><a
+                href="#skills" class="navLink lg:text-base 2xl:text-lg">Skills</a></li>
           </span>
           <span class="w-full flex justify-between items-center">
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-briefcase-alt"></i><a
-                href="#services" class="navLink">Services</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-scenery"></i><a
-                href="#portfolio" class="navLink">Portfolio</a></li>
-            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-message"></i><a
-                href="#contactMe" class="navLink">Contact Me</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-briefcase-alt  lg:hidden"></i><a
+                href="#services" class="navLink  lg:text-base 2xl:text-lg">Services</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-scenery  lg:hidden"></i><a
+                href="#portfolio" class="navLink lg:text-base 2xl:text-lg">Portfolio</a></li>
+            <li class="w-1/3 p-2 flex flex-col items-center justify-center"><i class="uil uil-message  lg:hidden lg:text-sm"></i><a
+                href="#contactMe" class="navLink lg:text-base lg:text-center 2xl:text-lg">Contact Me</a></li>
           </span>
         </ul>
-        <div class="w-full flex justify-end p-1.5 text-2xl"><i class="uil uil-times cursor-pointer app-icon"
+        <div class="w-full flex justify-end p-1.5 text-2xl"><i class="uil uil-times cursor-pointer app-icon lg:hidden"
             id="navClose"></i></div>
       </nav>
-      <div class="w-full flex  justify-between items-center px-4 bg-white transition-all duration-300 ease-out">
-        <span class=" p-1 text-lg font-semibold  flex justify-start"><a href="#home">Vince</a></span>
-        <span class="p-1 "><i class="uil uil-apps cursor-pointer flex justify-end text-xl" id="navToggle"></i></span>
+      <div class="w-full flex  justify-between items-center px-4 bg-white transition-all duration-300 ease-out md:w-[70%] md:m-auto lg:h-full lg:pt-4 2xl:pl-20">
+        <span class=" p-1 text-lg font-semibold  flex justify-start 2xl:text-xl"><a href="#home">Vince</a></span>
+        <span class="p-1 "><i class="uil uil-apps cursor-pointer flex justify-end text-xl lg:hidden" id="navToggle"></i></span>
       </div>
     </header>
 
     <!-- section 2 -->
-    <main class="w-full h-[100vh] px-3 md:flex md:flex-row-reverse md:h-[50vh]" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+    <main class="w-full h-[100vh] px-3 md:flex md:flex-row-reverse md:h-[50vh] lg:h-[90vh] 2xl:h-[100vh]" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
       <section class="w-full flex items-center justify-center relative pt-20">
         <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0 md:hidden">
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
         </div>
-        <div class=""><svg class="w-[200px] fill-purple-800" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+        <div class=""><svg class="w-[200px] fill-purple-800 lg:w-[280px] 2xl:w-[360px]" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
               <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -114,70 +114,71 @@
           </svg></div>
       </section>
       <!-- description -->
-      <div class="w-full px-2 mt-10 md:flex md:flex-col justify-center md:w-[90%] md:ml-7">
-        <div class="hidden w-fit absolute flex-col text-[1.25rem] grid-cols-3 left-2 md:flex">
+      <div class="w-full px-2 mt-10 md:flex md:flex-col justify-center md:w-[90%] md:ml-7 lg:ml-12 2xl:ml-20">
+        <div class="hidden w-fit absolute flex-col text-[1.25rem] grid-cols-3 left-2 md:flex 2xl:text-[1.40rem]">
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
           <a href="#" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
         </div>
-        <h1 class="text-3xl font-bold typewriter" id="intro"></h1>
-        <h3 class="text-2xl font-bold typewriter" id="description">
+        <h1 class="text-3xl font-bold typewriter 2xl:text-5xl" id="intro"></h1>
+        <h3 class="text-2xl font-bold typewriter 2xl:text-4xl 2xl:mt-3" id="description">
           <span id="staticLetter">a</span> <span id="dynamicText"></span>
         </h3>
-        <h4 class="text-lg  my-4 mb-5">High level experience in web design and development knowledge, producing quality
+        <h4 class="text-lg  my-4 mb-5 2xl:text-xl 2xl:my-7 2xl:mb-8">High level experience in web design and development knowledge, producing quality
           work.</h4>
 
         <!-- contact me & scroll down -->
-        <button class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white"><a href="#contactMe">Contact Me<i
+        <button class="w-fit py-4 p-3 rounded-md bg-purple-800 text-white 2xl:text-lg 2xl:mb-3"><a href="#contactMe">Contact Me<i
               class="uil uil-message ml-2"></i></a></button>
-        <span class=" block py-2 w-full mt-5 animate-bounce z-40 text-[--text-color]" style="animation-duration: 2.5s;"><i
-            class="uil uil-mouse-alt text-3xl"></i><a href="#aboutMe" class="text-sm">Scroll down</a><i
+        <span class=" block py-2 w-full mt-5 animate-bounce z-40 text-[--text-color] 2xl:mt-8" style="animation-duration: 2.5s;"><i
+            class="uil uil-mouse-alt text-3xl"></i><a href="#aboutMe" class="text-sm 2xl:text-base">Scroll down</a><i
             class="uil uil-arrow-down"></i></span>
       </div>
     </main>
 
     <!-- section 3 wrapper -->
-    <div class="w-full h-[100vh] px-3 md:h-[50vh] md:m-auto" id="aboutMe">
+    <div class="w-full h-[100vh] px-3 md:h-[50vh] md:m-auto lg:h-[100vh] lg:flex 2xl:h-[100vh] 2xl:pt-[15vh]" id="aboutMe">
       <!-- section 3 -->
       <!-- about me -->
-      <section class="w-full flex flex-col items-center justify-center pt-12" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+      <section class="w-full flex flex-col items-center justify-center pt-12 lg:pt-0 2xl:block" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold">About Me</h1>
-          <h3 class="text-sm">My Introduction</h3>
+          <h1 class="text-2xl font-bold 2xl:text-4xl">About Me</h1>
+          <h3 class="text-sm 2xl:text-lg 2xl:mt-2">My Introduction</h3>
         </div>
         <!-- wrapper -->
-        <div class="md:grid md:grid-cols-2">
+        <div class="md:grid md:grid-cols-2 2xl:py-10">
           <!-- about img -->
-          <div class="w-[70%] h-[150px] m-auto rounded-md mt-12 bg-purple-800 borderlight"></div>
+          <div class="w-[70%] h-[150px] m-auto rounded-md mt-12 bg-purple-800 borderlight lg:h-[220px] lg:w-[65%] 2xl:w-[60%] 2xl:h-[300px]"></div>
         <!-- about info -->
-        <div class="w-full mt-6 md:w-[90%] md:m-auto md:mt-6">
-          <h4 class="text-lg text-center px-1 md:text-left">Web developer, with extensive knowledge and years of experience working
+        <div class="w-full mt-6 md:w-[90%] md:m-auto md:mt-6 lg:w-[70%]">
+          <h4 class="text-lg text-center px-1 md:text-left 2xl:text-2xl">Web developer, with extensive knowledge and years of experience working
             in
             web technologies and UI/UX design, delivering quality work. </h4>
           <!-- experience wrapper -->
-          <div class="w-full flex justify-evenly text-center mt-4">
+          <div class="w-full flex justify-evenly text-center mt-4 2xl:mt-6">
             <div class="w-1/3 my-3">
               <span class="w-full block">
-                <p class="font-semibold text-2xl">01+</p>Years
+                <p class="font-semibold text-2xl 2xl:text-3xl">01+</p>Years
               </span>
               <span class="w-full">experience</span>
             </div>
             <div class="w-1/3 my-3">
               <span class="w-full">
-                <p class="font-semibold text-2xl">7+</p> Completed
+                <p class="font-semibold text-2xl 2xl:text-3xl">7+</p> Completed
               </span>
               <span class="w-full">projects</span>
             </div>
             <div class="w-1/3 my-3">
               <span class="w-full">
-                <p class="font-semibold text-2xl">01+</p> Companies
+                <p class="font-semibold text-2xl 2xl:text-3xl">01+</p> Companies
               </span>
               <span class="w-full">worked</span>
             </div>
           </div>
           <!-- dowload cv -->
-          <div class="w-full flex justify-center items-center mt-5">
-            <button class="w-fit mx-auto py-4 p-3 rounded-md bg-purple-800 text-white"><a download=""
+          <div class="w-full flex justify-center items-center mt-5 2xl:mt-7">
+            <button class="w-fit mx-auto py-4 p-3 rounded-md bg-purple-800 text-white 2xl
+            text-lg"><a download=""
               href="#"></a>Download CV<i class="uil uil-download-alt ml-2"></i></i></a></button>
             </div>
           </div>
@@ -186,26 +187,26 @@
     </div>
 
     <!-- section 4 wrapper -->
-    <div class="w-full h-fit" id="skills">
+    <div class="w-full h-fit 2xl:h-[200vh] 2xl:pt-[15vh]" id="skills">
       <!-- section 4 -->
       <!-- skills -->
-      <section class="w-full flex flex-col items-center justify-center pt-12 px-2 md:w-[95%] md:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+      <section class="w-full flex flex-col items-center justify-center pt-12 px-2 md:w-[95%] md:m-auto lg:h-[100vh] lg:flex lg:w-[93%] 2xl:pt-0 2xl:h-fit 2xl:w-[85%]" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold">Skills</h1>
-          <h3 class="text-sm">My Technical Level</h3>
+          <h1 class="text-2xl font-bold 2xl:text-4xl">Skills</h1>
+          <h3 class="text-sm 2xl:text-lg 2xl:mt-2">My Technical Level</h3>
         </div>
         <!-- technical skills -->
         <!-- frontend -->
         <!-- accordion-->
-        <div class="w-full my-8">
+        <div class="w-full my-8 2xl:h-[60vh]">
           <div class="border rounded-md overflow-hidden md:grid md:grid-cols-2">
             <!-- Coding Skills Accordion -->
             <div class="accordion ">
               <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
-                <span class="text-2xl"><i class="uil uil-brackets-curly"></i></span>
+                <span class="text-2xl 2xl:text-3xl"><i class="uil uil-brackets-curly"></i></span>
                 <span class="flex flex-col">
-                  <span class="font-bold text-xl">Frontend developer</span>
-                  <span>More than a year</span>
+                  <span class="font-bold text-xl 2xl:text-2xl">Frontend developer</span>
+                  <span class="2xl:text-lg">More than a year</span>
                 </span>
                 <span>
                   <svg class="accordion-arrow h-4 w-4 fill-current text-gray-600 transition-transform "
@@ -218,7 +219,7 @@
                 <ul class=" list-none">
                   <!-- html -->
                   <span class="w-full block py-2 px-1 mb-3">
-                    <span class="flex w-full justify-between font-bold">
+                    <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>HTML</li>
                       <li class="font-normal">80%</li>
                     </span>
@@ -229,7 +230,7 @@
                   </span>
                   <!-- css -->
                   <span class="w-full block py-2 px-1 mb-3">
-                    <span class="flex w-full justify-between font-bold">
+                    <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>CSS</li>
                       <li class="font-normal">70%</li>
                     </span>
@@ -240,7 +241,7 @@
                   </span>
                   <!-- javaScript -->
                   <span class="w-full block py-2 px-1">
-                    <span class="flex w-full justify-between font-bold">
+                    <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>JavaScript</li>
                       <li class="font-normal">55%</li>
                     </span>
@@ -256,10 +257,10 @@
             <!-- Design Skills Accordion -->
             <div class="accordion mt-10 md:mt-0">
               <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
-                <span class="text-2xl"><i class="uil uil-swatchbook"></i></span>
+                <span class="text-2xl 2xl:text-3xl"><i class="uil uil-swatchbook"></i></span>
                 <span class="flex flex-col">
-                  <span class="font-bold text-xl">Designer</span>
-                  <span>More than 3 years</span>
+                  <span class="font-bold text-xl 2xl:text-2xl">Designer</span>
+                  <span class="2xl:text-lg">More than 3 years</span>
                 </span>
                 <span>
                   <svg class="accordion-arrow h-4 w-4 fill-current text-gray-600 transition-transform"
@@ -272,7 +273,7 @@
                 <ul class="px-2">
                   <!-- figma -->
                   <span class="w-full block py-2 px-1 mb-3">
-                    <span class="flex w-full justify-between font-bold">
+                    <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>Figma</li>
                       <li class="font-normal">60%</li>
                     </span>
@@ -283,7 +284,7 @@
                   </span>
                   <!-- javaScript -->
                   <span class="w-full block py-2 px-1">
-                    <span class="flex w-full justify-between font-bold">
+                    <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>Photoshop</li>
                       <li class="font-normal">55%</li>
                     </span>
@@ -304,19 +305,19 @@
       <!-- wrapper -->
       <section class="w-full mt-16 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
         <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold">Qualification</h1>
-          <h3 class="text-sm">My personal journey</h3>
+          <h1 class="text-2xl font-bold 2xl:text-4xl">Qualification</h1>
+          <h3 class="text-sm 2xl:text-lg 2xl:mt-2">My personal journey</h3>
         </div>
         <!-- education/work -->
-        <div class="w-[80%] m-auto flex mt-10">
+        <div class="w-[80%] m-auto flex mt-10 2xl:mt-20">
           <span class="w-1/2 flex justify-center font-bold items-center cursor-pointer qualification_active"
             data-target="#education">
-            <span class="mr-2 text-2xl"><i class="uil uil-graduation-cap text-3xl"></i></span>
-            <span>Education</span>
+            <span class="mr-2 text-2xl"><i class="uil uil-graduation-cap text-3xl 2xl:text-4xl"></i></span>
+            <span class="2xl:text-xl">Education</span>
           </span>
           <span class="w-1/2 flex justify-center font-bold items-center cursor-pointer" data-target="#work">
-            <span class="mr-4"><i class="uil uil-briefcase-alt text-2xl"></i></span>
-            <span>Work</span>
+            <span class="mr-4"><i class="uil uil-briefcase-alt text-2xl 2xl:text-3xl"></i></span>
+            <span class="2xl:text-xl">Work</span>
           </span>
         </div>
         <!-- education/works data -->
@@ -327,7 +328,7 @@
           <div class="w-full mt-7 qualification_content qualification_active" data-content id="education">
             <!-- qualification 1 -->
             <div class="w-[95%] m-auto grid grid-cols-2">
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">Computer Engineer</h3>
                 <span>Peru - University</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2009 - 2014</div>
@@ -343,7 +344,7 @@
               <div class="flex justify-center items-center">
                 <span class="h-[9px] w-[9px] rounded-full bg-purple-800 block"></span>
               </div>
-              <div class=" m-auto">
+              <div class=" m-auto 2xl:text-xl">
                 <h3 class="font-bold">Web Design</h3>
                 <span>Spain - Institute</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2014 - 2017</div>
@@ -351,7 +352,7 @@
             </div>
             <!-- qualification 3 -->
             <div class="w-[95%] m-auto grid grid-cols-2">
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">Web Development</h3>
                 <span>Peru - University</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2017 - 2019</div>
@@ -367,7 +368,7 @@
               <div class="flex justify-center items-center">
                 <span class="h-[9px] w-[9px] rounded-full bg-purple-800 block"></span>
               </div>
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">Web Development</h3>
                 <span>Peru - University</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2017 - 2019</div>
@@ -383,7 +384,7 @@
               <div class="flex justify-center items-center">
                 <span class="h-[9px] w-[9px] rounded-full bg-purple-800 block"></span>
               </div>
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">Software Engineer</h3>
                 <span>Microsoft - Peru</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2016 - 2018</div>
@@ -391,7 +392,7 @@
             </div>
             <!-- qualification 2 -->
             <div class="w-[95%] m-auto grid grid-cols-2">
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">Frontend Developer</h3>
                 <span>Apple Inc - Spain</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2018 - 2020</div>
@@ -407,7 +408,7 @@
               <div class="flex justify-center items-center">
                 <span class="h-[9px] w-[9px] rounded-full bg-purple-800 block"></span>
               </div>
-              <div class="m-auto">
+              <div class="m-auto 2xl:text-xl">
                 <h3 class="font-bold">UI Designer</h3>
                 <span>Figma - Spain</span>
                 <div><i class="uil uil-calendar-alt mr-2"></i>2017 - 2019</div>
@@ -419,23 +420,23 @@
     </div>
       <!-- section 6 - services -->
       <!-- wrapper -->
-      <div class="w-full h-[110vh] mt-20 md:h-[50vh]" id="services">
+      <div class="w-full h-[110vh] mt-20 md:h-[50vh] lg:h-[110vh] lg:flex lg:items-center lg:justify-center 2xl:h-[100vh]" id="services">
         <!-- services -->
-        <section class="w-full flex flex-col items-center justify-center pt-14 md:w-[90%] md:m-auto"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+        <section class="w-full flex flex-col items-center justify-center pt-14 md:w-[90%] md:m-auto lg:pt-24 lg:w-full 2xl:pt-0 2xl:w-[85%]"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
-            <h1 class="text-2xl font-bold">Services</h1>
-            <h3 class="text-sm">What I offer</h3>
+            <h1 class="text-2xl font-bold 2xl:text-4xl">Services</h1>
+            <h3 class="text-sm 2xl:text-lg 2xl:mt-2">What I offer</h3>
           </div>
 
           <!-- projects -->
           <!-- wrapper -->
-          <div class="w-full grid grid-cols-2">
+          <div class="w-full grid grid-cols-2 lg:w-[80%] lg:m-auto">
 
             <!-- Project Card 1 -->
             <div class="max-w-md mx-auto my-8">
               <div class="bg-gray-100 p-4 rounded-md shadow-md">
-                <i class="uil uil-arrow mr-2 text-2xl"></i>
-                <h2 class="text-lg font-bold">Frontend <br>Developer</h2>
+                <i class="uil uil-arrow mr-2 text-2xl 2xl:text-3xl 2xl:mb-2"></i>
+                <h2 class="text-lg font-bold 2xl:text-xl 2xl:mb-2">Frontend <br>Developer</h2>
                 <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-end" id="viewMoreButton2">View
                   More<i class="uil uil-arrow-right text-xl ml-1"></i></button>
               </div>
@@ -443,13 +444,13 @@
 
             <!-- Modal 1 -->
             <div id="modal2" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+              <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
+              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50 lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
-                  <h3 class="text-lg font-bold m-auto text-center">Frontend <br>Developer</h3>
+                  <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">Frontend <span class="block 2xl:inline">Developer</span></h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2">
                     <i class="uil uil-check-circle mr-2"></i>
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -473,8 +474,8 @@
             <!-- Project Card 2 -->
             <div class="max-w-md mx-auto my-8">
               <div class="bg-gray-100 p-4 rounded-md shadow-md">
-                <i class="uil uil-web-grid text-2xl"></i>
-                <h2 class="text-lg font-bold">UI/UX <br>Designer</h2>
+                <i class="uil uil-web-grid text-2xl 2xl:text-3xl 2xl:mb-2"></i>
+                <h2 class="text-lg font-bold 2xl:text-xl 2xl:mb-2">UI/UX <br>Designer</h2>
                 <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-end" id="viewMoreButton1">View
                   More<i class="uil uil-arrow-right text-xl ml-1"></i></button>
               </div>
@@ -482,13 +483,13 @@
 
             <!-- Modal 2 -->
             <div id="modal1" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+              <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
+              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
-                  <h3 class="text-lg font-bold m-auto text-center">UI/UX <br>Designer</h3>
+                  <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">UI/UX <span class="block 2xl:inline">Designer</span></h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2">
                     <i class="uil uil-check-circle mr-2"></i>
                     <p>I develop the user interface</p>
@@ -512,8 +513,8 @@
             <!-- Project Card 3 -->
             <div class="max-w-md mx-auto my-8">
               <div class="bg-gray-100 p-4 rounded-md shadow-md">
-                <i class="uil uil-pen text-2xl"></i>
-                <h2 class="text-lg font-bold">Branding <br>Designer</h2>
+                <i class="uil uil-pen text-2xl 2xl:text-3xl 2xl:mb-2"></i>
+                <h2 class="text-lg font-bold 2xl:text-xl 2xl:mb-2">Branding <br>Designer</h2>
                 <button class="mt-4 py-2 px-4 rounded focus:outline-none focus:shadow-outline flex items-end hover " id="viewMoreButton3">View
                   More<i class="uil uil-arrow-right text-xl ml-1 "></i></button>
               </div>
@@ -523,13 +524,13 @@
 
             <!-- Modal 3 -->
             <div id="modal3" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-              <div class="modal-overlay fixed inset-0 bg-gray-800 opacity-50"></div>
-              <div class="w-[55%] modal-container bg-white p-4 rounded shadow-lg z-50">
+              <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
+              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
-                  <h3 class="text-lg font-bold m-auto text-center">Branding <br>Designer</h3>
+                  <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">Branding <span class="block 2xl:inline">Designer</span></h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2">
                     <i class="uil uil-check-circle mr-2"></i>
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -555,9 +556,9 @@
 
       <!-- section 7 -portfolio-->
       <!-- wrapper -->
-      <div class="w-full h-fit md:h-[70vh] md:mt-28" id="portfolio">
+      <div class="w-full h-fit md:h-[70vh] md:mt-28 lg:h-[100vh] lg:flex lg:items-center lg:justify-center" id="portfolio">
         <!-- portfolio -->
-        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2 md:h-full md:my-auto md:w-[60%] md:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+        <section class="w-full h-[100vh] flex flex-col items-center justify-center px-2 md:h-full md:my-auto md:w-[60%] md:m-auto lg:pt-24" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
           <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
             <h1 class="text-2xl font-bold">Portfolio</h1>
             <h3 class="text-sm">What I offer</h3>
@@ -565,7 +566,7 @@
 
           <!-- works -->
           <!-- swipper-container -->
-          <div class="w-full h-fit mt-14 swiper mySwiper swiper_container-portfolio">
+          <div class="w-full h-fit mt-14 swiper mySwiper swiper_container-portfolio lg:mt-5">
             <!-- swiper-wrapper -->
             <div class=" w-full swiper-wrapper">
               <!-- 1st -->
@@ -615,24 +616,24 @@
 
         <!-- section 8 -->
         <!-- have a new project? -->
-        <section class="w-full h-[83vh] mt-20 bg-purple-800 md:h-[50vh] md:flex md:relative">
-          <div class="w-[85%] m-auto h-[45%] flex flex-col justify-center items-center py-5 text-white">
+        <section class="w-full h-[83vh] mt-20 bg-purple-800 md:h-[50vh] md:flex md:relative lg:h-[70vh] lg:px-8">
+          <div class="w-[85%] m-auto h-[45%] flex flex-col justify-center items-center py-5 text-white lg:h-fit">
             <h2 class="font-bold text-center p-4 text-2xl mt-7">You have a new project?</h2>
-            <p class="text-center p-4">Contact me now and get 30% discount on your project.</p>
+            <p class="text-center p-4">Contact me now and get <span class="text-lg font-bold mx-1">30% discount</span> on your project.</p>
             <button class="w-fit py-4 p-3 rounded-md bg-white text-black mt-5"><a href="#contactMe">Contact Me<i
                   class="uil uil-message ml-2"></i></a></button>
           </div>
           <div class="w-[85%] m-auto h-[55%] md:w-[85%] md:h-full md:flex md:items-end">
-            <div class="h-full w-full md:h-[80%] md:w-full"
-              style="background: url(../src/imgs/contactMe-img.png); background-repeat: no-repeat; background-position: center; background-size: cover;">
+            <div class="h-full w-full md:h-[75%] md:w-full lg:h-[94%]"
+              style="background: url(../src/imgs/contactMe-img.png); background-repeat: no-repeat; background-position: center; background-size: contain;">
             </div>
           </div>
         </section>
 
         <!-- section 9 -->
         <!-- testimonials -->
-        <section class="w-full h-fit mt-36 px-3"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
-          <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
+        <section class="w-full h-fit mt-36 px-3 lg:w-[90%] lg:m-auto lg:mt-28"  data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+          <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center lg:mb-5">
             <h1 class="text-2xl font-bold">Testimonials</h1>
             <h3 class="text-sm">My clients saying</h3>
           </div>
@@ -703,17 +704,20 @@
 
         <!-- section 10-contact me-->
         <!-- wrapper -->
-        <div class="w-full h-[110vh] mt-10" id="contactMe">
+        <div class="w-full h-[110vh] mt-10 md:h-[50vh] lg:h-[100vh] lg:flex lg:items-center lg:justify-center" id="contactMe">
           <!-- contact me -->
-          <section class="w-full flex flex-col items-center justify-center pt-12 px-3" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+          <section class="w-full flex flex-col items-center justify-center pt-12 px-3 lg:pt-24 lg:w-[90%] lg:m-auto" data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
             <div class="w-[50%] mx-auto text-center flex flex-col items-center justify-center">
               <h1 class="text-2xl font-bold">Contact Me</h1>
               <h3 class="text-sm">Get in touch</h3>
             </div>
             <!-- details -->
-            <div class="w-full mt-10">
-              <!-- tel -->
-              <div class="w-[45%] flex items-center mb-5">
+            <div class="w-full mt- md:flex md:justify-between md:mt-10">
+              <!-- wrapper -->
+              <div class="md:w-1/2">
+
+                <!-- tel -->
+                <div class="w-[45%] flex items-center mb-5">
                 <span class="w-fit"><i class="uil uil-phone text-3xl"></i></span>
                 <span class="w-full flex flex-col ml-5">
                   <span class="w-full font-bold text-xl">Call Me</span>
@@ -736,8 +740,9 @@
                   <span class="w-full">Alasia, Lagos, Nigeria.</span>
                 </span>
               </div>
+            </div>
               <!-- form -->
-              <form action="https://formspree.io/f/xgebgpkb" method="post" class="">
+              <form action="https://formspree.io/f/xgebgpkb" method="post" class="md:w-1/2">
                 <div class="w-full mb-3">
                   <input type="text" placeholder="Name"
                     class="text-[16px] outline-none border-none text-black w-full h-10 p-2" name="name">
@@ -768,30 +773,75 @@
         <!-- wrapper -->
         <div class="w-full h-fit p-3 mt-16 text-white bg-purple-800 pb-4">
           <!-- footer -->
-          <footer class="w-full">
-            <div class="w-full flex flex-col mt-3">
-              <span class="w-full font-bold text-2xl px-3 py-2"><a href="#home">Vince</a></span>
-              <span class="w-full px-3 mb-2">Frontend Developer</span>
-            </div>
-            <div class="w-full flex flex-col mt-4">
-              <span class="w-full px-3 py-2"><a href="#services">Services</a></span>
-              <span class="w-full px-3 py-2"><a href="#portfolio">Portfolio</a></span>
-              <span class="w-full px-3 py-2"><a href="#contactMe">Contact Me</a></span>
-            </div>
-            <div class="w-[30%] flex justify-between mt-4 p-3">
-              <span class=""><a href="https://www.facebook.com/vincent.atunwa/" target="_blank"><i
+          <footer class="w-full relative lg:h-[40vh]">
+            <!-- wrapper -->
+            <div class="w-full lg:flex lg:pb-10 lg:w-[98%] lg:m-auto">
+              <div class="w-full flex flex-col mt-3 lg:w-1/3">
+                <span class="w-full font-bold text-2xl px-3 py-2"><a href="#home">Vince</a></span>
+                <span class="w-full px-3 mb-2">Frontend Developer</span>
+              </div>
+              <div class="w-full flex flex-col mt-4 md:w-[40%] md:mx-auto md:text-left lg:flex-row lg:w-1/3">
+                <span class="w-full px-3 py-2 md:flex items-center justify-center"><a href="#services">Services</a></span>
+                <span class="w-full px-3 py-2 md:flex items-center justify-center"><a href="#portfolio">Portfolio</a></span>
+                <span class="w-full px-3 py-2 md:flex items-center justify-center "><a href="#contactMe">Contact Me</a></span>
+              </div>
+              <div class="w-[30%] flex justify-between mt-4 p-3 lg:w-1/3 lg:justify-end lg:pr-5">
+                <span class="lg:-2"><a href="https://www.facebook.com/vincent.atunwa/" target="_blank"><i
                     class="uil uil-facebook-f text-lg"></i></a></span>
-              <span class=""><a href="https://www.instagram.com/sirviince_/" target="_blank"><i
+              <span class="lg:ml-7"><a href="https://www.instagram.com/sirviince_/" target="_blank"><i
                     class="uil uil-instagram text-lg"></i></a></span>
-              <span class=""><a href="https://twitter.com/Dvizible"><i
+              <span class="lg:ml-7"><a href="https://twitter.com/Dvizible"><i
                     class="uil uil-twitter-alt text-lg"></i></a></span>
             </div>
-            <div class="w-full flex justify-center items-center text-xs mb-20 mt-3">&copy; Vince Idealism. All rights
+          </div>
+            <div class="w-full flex justify-center items-center text-xs mb-20 mt-3  lg:absolute bottom-0 lg:mt-0 lg:mb-0 ">&copy; Vince Idealism. All rights
               reserved</div>
               <!-- scrollup bar -->
               <!-- <div class="borderlight fixed right-1"><i class="uil uil-arrow-right"></i></div> -->
           </footer>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 </body>
 
 
@@ -1032,8 +1082,11 @@ const intro = document.getElementById('intro');
     }
 
     showIntro(); // Start showing the intro paragraph
+    </script>
     
-</script>
+
+
+    
 
 
 </html>
