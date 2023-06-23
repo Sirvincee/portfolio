@@ -1221,6 +1221,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1257,6 +1261,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1774,6 +1783,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:m-auto {
+    margin: auto;
+  }
+
   .\32xl\:my-7 {
     margin-top: 1.75rem;
     margin-bottom: 1.75rem;
@@ -1819,6 +1832,26 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .\32xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\32xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .\32xl\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .\32xl\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .\32xl\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .\32xl\:block {
     display: block;
   }
@@ -1852,6 +1885,26 @@ video {
     height: fit-content;
   }
 
+  .\32xl\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .\32xl\:h-\[230px\] {
+    height: 230px;
+  }
+
+  .\32xl\:h-\[97\%\] {
+    height: 97%;
+  }
+
+  .\32xl\:h-\[96\%\] {
+    height: 96%;
+  }
+
+  .\32xl\:h-\[110px\] {
+    height: 110px;
+  }
+
   .\32xl\:w-\[360px\] {
     width: 360px;
   }
@@ -1870,6 +1923,30 @@ video {
 
   .\32xl\:w-\[23\%\] {
     width: 23%;
+  }
+
+  .\32xl\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .\32xl\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .\32xl\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .\32xl\:w-\[110px\] {
+    width: 110px;
+  }
+
+  .\32xl\:w-\[83\%\] {
+    width: 83%;
+  }
+
+  .\32xl\:p-2 {
+    padding: 0.5rem;
   }
 
   .\32xl\:px-20 {
@@ -1892,6 +1969,18 @@ video {
 
   .\32xl\:pt-\[15vh\] {
     padding-top: 15vh;
+  }
+
+  .\32xl\:pt-5 {
+    padding-top: 1.25rem;
+  }
+
+  .\32xl\:pt-7 {
+    padding-top: 1.75rem;
+  }
+
+  .\32xl\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .\32xl\:text-2xl {
@@ -1931,6 +2020,14 @@ video {
   .\32xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\32xl\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .\32xl\:text-\[18px\] {
+    font-size: 18px;
   }
 }
 
