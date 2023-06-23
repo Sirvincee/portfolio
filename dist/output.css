@@ -1494,6 +1494,18 @@ video {
     margin-top: 1.5rem;
   }
 
+  .md\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1520,6 +1532,19 @@ video {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-fit {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:h-\[60vh\] {
+    height: 60vh;
+  }
+
+  .md\:h-\[40vh\] {
+    height: 40vh;
   }
 
   .md\:w-1\/2 {
@@ -1576,6 +1601,21 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .md\:text-left {
