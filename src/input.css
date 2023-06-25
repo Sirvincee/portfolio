@@ -63,7 +63,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  animation: move-blob 15s ease-in-out infinite;
+  animation: move-blob 17s ease-in-out infinite;
 }
 
 @keyframes move-blob {
