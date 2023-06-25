@@ -44,4 +44,12 @@
     transition-duration: .3s; 
   }
 
-
+  ::-webkit-scrollbar {
+    width: .60rem;
+    background-color: rgba(128, 128, 128, 0.283);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(128, 128, 128, 0.604);
+  border-radius: .5rem;
+}
