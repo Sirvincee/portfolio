@@ -878,6 +878,10 @@ video {
   width: 60%;
 }
 
+.w-\[65\%\] {
+  width: 65%;
+}
+
 .w-\[70\%\] {
   width: 70%;
 }
@@ -1033,19 +1037,14 @@ video {
   background-color: rgb(42 28 166 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#A99CE1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(169 156 225 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .bg-gray-100 {
@@ -1374,6 +1373,41 @@ video {
 ::-webkit-scrollbar-thumb{
   background-color: rgba(128, 128, 128, 0.604);
   border-radius: .5rem;
+}
+
+/* blob movement animation */
+
+#my-svg-container {
+  position: relative;
+}
+
+#my-svg-blob {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: move-blob 15s ease-in-out infinite;
+}
+
+@keyframes move-blob {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(20px, 20px);
+  }
+
+  50% {
+    transform: translate(0, 40px);
+  }
+
+  75% {
+    transform: translate(-20px, 20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .focus\:outline-none:focus {

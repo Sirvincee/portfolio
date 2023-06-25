@@ -90,14 +90,16 @@
     </header>
 
     <!-- section 2 -->
-    <main class="w-full h-[100vh] px-3 md:flex md:flex-row-reverse md:h-[500px] md:mb-10 md:py-5 lg:h-[90vh] 2xl:h-[100vh]" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
-      <section class="w-full flex items-center justify-center relative pt-20">
+    <main class="w-full h-[100vh] px-3 md:flex md:flex-row-reverse md:h-[500px] md:mb-10 md:py-5 lg:h-[90vh] 2xl:h-[100vh" id="home"   data-aos="fade-down" data-aos-duration="800" data-aos-once="false">
+      <section class="w-full flex items-center justify-center relative pt-20" id="my-svg-container">
         <div class="w-fit absolute flex flex-col text-[1.25rem] grid-cols-3 left-0 md:hidden">
           <a href="https://www.linkedin.com/in/atunwa-vincent-2083931b8/" target="blank" class="mb-[1rem]"><i class="uil uil-linkedin-alt"></i></a>
           <a href="https://github.com/Sirvincee" target="blank" class="mb-[1rem]"><i class="uil uil-github-alt"></i></i></a>
           <a href="https://twitter.com/Dvizible" target="blank" class="mb-[1rem]"><i class="uil uil-twitter-alt"></i></i></i></a>
         </div>
-        <div class=""><svg class="w-[200px] fill-[#2A1CA6] lg:w-[280px] 2xl:w-[360px]" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+        <!-- animation wrapper -->
+        <div class="w-[200px] h-[200px] m-auto flex items-center justify-center" id="my-svg-container">
+          <div class="" id="my-svg-blob"><svg class="w-[200px] fill-[#2A1CA6] lg:w-[280px] 2xl:w-[360px]" id="" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <mask id="mask0" mask-type="alpha">
               <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
@@ -107,12 +109,13 @@
             </mask>
             <g mask="url(#mask0)">
               <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+              129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+              -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
               <image href="../src/imgs/vinceImg-min.png" class="w-[200px]" x="" y="5" />
             </g>
           </svg></div>
+        </div>
       </section>
       <!-- description -->
       <div class="w-full px-2 mt-10 md:flex md:flex-col justify-center md:w-[90%] md:ml-7 lg:ml-12 2xl:ml-20">
@@ -225,7 +228,7 @@
                       <li class="font-normal">80%</li>
                     </span>
                     <!-- guage -->
-                    <span class="w-full h-[5px] bg-blue-600 block rounded-full mt-2">
+                    <span class="w-full h-[5px] bg-[#A99CE1] block rounded-full mt-2">
                       <span class="w-[80%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
                     </span>
                   </span>
@@ -236,7 +239,7 @@
                       <li class="font-normal">70%</li>
                     </span>
                     <!-- guage -->
-                    <span class="w-full h-[5px] bg-blue-500 block rounded-full mt-2">
+                    <span class="w-full h-[5px] bg-[#A99CE1] block rounded-full mt-2">
                       <span class="w-[70%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
                     </span>
                   </span>
@@ -244,11 +247,11 @@
                   <span class="w-full block py-2 px-1">
                     <span class="flex w-full justify-between font-bold 2xl:text-lg">
                       <li>JavaScript</li>
-                      <li class="font-normal">55%</li>
+                      <li class="font-normal">60%</li>
                     </span>
                     <!-- guage -->
-                    <span class="w-full h-[5px] bg-blue-500 block rounded-full mt-2">
-                      <span class="w-[55%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
+                    <span class="w-full h-[5px] bg-[#A99CE1] block rounded-full mt-2">
+                      <span class="w-[60%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
                     </span>
                   </span>
                 </ul>
@@ -279,7 +282,7 @@
                       <li class="font-normal">60%</li>
                     </span>
                     <!-- guage -->
-                    <span class="w-full h-[5px] bg-blue-500 block rounded-full mt-2">
+                    <span class="w-full h-[5px] bg-[#A99CE1] block rounded-full mt-2">
                       <span class="w-[60%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
                     </span>
                   </span>
@@ -290,7 +293,7 @@
                       <li class="font-normal">55%</li>
                     </span>
                     <!-- guage -->
-                    <span class="w-full h-[5px] bg-blue-500 block rounded-full mt-2">
+                    <span class="w-full h-[5px] bg-[#A99CE1] block rounded-full mt-2">
                       <span class="w-[55%] h-[5px] bg-[#2A1CA6] rounded-full block"></span>
                     </span>
                   </span>
@@ -434,7 +437,7 @@
             <!-- Modal 1 -->
             <div id="modal2" class="fixed inset-0 flex items-center justify-center z-50 hidden">
               <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
-              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50 lg:w-[30%] 2xl:w-[23%]">
+              <div class="w-[65%] m-auto modal-container bg-zinc-200 p-4 rounded shadow-lg z-50 lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
                   <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">Frontend <span class="block 2xl:inline">Developer</span></h3>
@@ -442,19 +445,19 @@
                 <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>I develop captivating and intuitive interfaces</p>
                   </div>
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem, ipsum dolor.</p>
+                    <p>I create adaptive and user-friendly websites for all devices.</p>
                   </div>
                   <div class="flex items-center 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p>I build high-performance websites with clean and optimized code.</p>
                   </div>
                   <div class="flex items-center 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>I ensure cross-platform compatibility for consistent functionality.</p>
                   </div>
                 </div>
               </div>
@@ -473,7 +476,7 @@
             <!-- Modal 2 -->
             <div id="modal1" class="fixed inset-0 flex items-center justify-center z-50 hidden">
               <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
-              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
+              <div class="w-[65%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
                   <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">UI/UX <span class="block 2xl:inline">Designer</span></h3>
@@ -481,19 +484,19 @@
                 <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>I develop the user interface</p>
+                    <p>I gain insights into users for informed design decisions.</p>
                   </div>
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Web page development</p>
+                    <p>I visualize and iterate designs with interactive prototypes.</p>
                   </div>
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>I create UX element interactions</p>
+                    <p>I create visually captivating designs aligned with brand identity.</p>
                   </div>
                   <div class="flex items-center">
                     <i class="uil uil-check-circle mr-2 2xl:p-2"></i>
-                    <p>I position your company brand</p>
+                    <p>I improve interfaces through testing and user feedback.</p>
                   </div>
                 </div>
               </div>
@@ -514,7 +517,7 @@
             <!-- Modal 3 -->
             <div id="modal3" class="fixed inset-0 flex items-center justify-center z-50 hidden">
               <div class="modal-overlay fixed inset-0 bg-gray-white opacity-0"></div>
-              <div class="w-[55%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
+              <div class="w-[65%] modal-container bg-zinc-200 p-4 rounded shadow-lg z-50  lg:w-[30%] 2xl:w-[23%]">
                 <div class="modal-header flex justify-between items-center mb-4 relative">
                   <i class="uil uil-times cursor-pointer app-icon close-icon text-2xl fill-current text-gray-500 absolute top-0 right-0"></i>
                   <h3 class="text-lg font-bold m-auto text-center 2xl:text-xl">Branding <span class="block 2xl:inline">Designer</span></h3>
@@ -522,19 +525,19 @@
                 <div class="modal-body 2xl:text-lg">
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>I create unique and authentic brand identities.</p>
                   </div>
                   <div class="flex items-center mb-2 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p>I craft memorable and impactful logos.</p>
                   </div>
                   <div class="flex items-center 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    <p>I craft memorable and impactful logos.</p>
                   </div>
                   <div class="flex items-center 2xl:p-2">
                     <i class="uil uil-check-circle mr-2"></i>
-                    <p>Lorem ipsum dolor sit.</p>
+                    <p>I design marketing materials that align with the brand.</p>
                   </div>
                 </div>
               </div>
@@ -579,7 +582,18 @@
                   <button class="w-fit py-4 p-3 rounded-md bg-[#2A1CA6] text-white mb-10 flex  items-center 2xl:text-lg 2xl:mb-16" id="viewMoreButton3"><a href="https://windscribe-clone.vercel.app" target="_blank">Demo<i class="uil uil-arrow-right text-xl ml-1"></i></a></button>
                 </div>
               </div>
-              <!-- 3nd -->
+              <!-- 3rd -->
+              <div class="w-full swiper-slide">
+                <div class="w-[80%] h-[200px] m-auto bg-red-700 rounded-md 2xl:h-[230px]" style="background: url(../src/imgs/portfolio-capture.png); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
+                <div class="w-[80%] m-auto flex flex-col mt-7 2xl:w-[75%]">
+                  <span class="w-full flex text-lg font-bold mb-5 2xl:text-xl">Signup Pages</span>
+                  <span class="w-full mb-9 2xl:text-lg">Website adaptable to all devices, with UI components and animated
+                    interactions.</span>
+                  <button class="w-fit py-4 p-3 rounded-md bg-[#2A1CA6] text-white mb-10 2xl:text-lg 2xl:mb-16"><a href="https://portfolio-00-six.vercel.app/">Demo<i
+                        class="uil uil-arrow-right ml-1"></i></a></button>
+                </div>
+              </div>
+              <!-- 4th -->
               <div class="w-full swiper-slide">
                 <div class="w-[80%] h-[200px] m-auto bg-red-700 rounded-md 2xl:h-[230px]" style="background: url(../src/imgs/portfolio-capture.png); background-repeat: no-repeat; background-position: center; background-size: contain;"></div>
                 <div class="w-[80%] m-auto flex flex-col mt-7 2xl:w-[75%]">
@@ -638,7 +652,7 @@
                     style="background: url(../src/imgs/testimonial1.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
                   </div>
                   <span class="flex flex-col justify-center items-center mt-2">
-                    <h3 class="font-bold text-xl 2xl:text-[22px]">Sara Smith</h3>
+                    <h3 class="font-bold text-xl 2xl:text-[22px]">Emmanuel I.</h3>
                     <p>Client</p>
                   </span>
                   <span class="w-fit m-auto text-lg flex justify-center items-center mb-2 2xl:text-[18px]"><i
@@ -646,8 +660,7 @@
                       class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
                   </span>
                 </div>
-                <p class="2xl:text-lg">"I get good impression, I carry out my project with all possible quality and attention and support 24
-                  hours a day."</p>
+                <p class="2xl:text-lg">"Effortless collaboration! Vince is highly responsive and efficient. His dedication is commendable. Highly recommended!"</p>
               </div>
               <!-- 2 -->
               <div class="w-full flex flex-col mt-7 mb-16 swiper-slide px-3">
@@ -656,7 +669,7 @@
                     style="background: url(../src/imgs/testimonial2.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
                   </div>
                   <span class="flex flex-col justify-center items-center mt-2">
-                    <h3 class="font-bold text-xl 2xl:text-[22px]">Matt Robinson</h3>
+                    <h3 class="font-bold text-xl 2xl:text-[22px]">Xavier C.</h3>
                     <p>Client</p>
                   </span>
                   <span class="w-fit m-auto text-lg flex justify-center items-center mb-2 2xl:text-[18px]"><i
@@ -664,8 +677,7 @@
                       class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
                   </span>
                 </div>
-                <p class="2xl:text-lg">"I get good impression, I carry out my project with all possible quality and attention and support 24
-                  hours a day."</p>
+                <p class="2xl:text-lg">"I can't thank Vince enough for his exceptional work. His responsiveness and meticulous attention to detail have made all the difference. I wholeheartedly endorse his services as a testament to his remarkable skills and dedication."</p>
               </div>
               <!-- 3 -->
               <div class="w-full flex flex-col mt-7 mb-16 swiper-slide px-3">
@@ -674,7 +686,7 @@
                     style="background: url(../src/imgs/testimonial3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
                   </div>
                   <span class="flex flex-col justify-center items-center mt-2">
-                    <h3 class="font-bold text-xl 2xl:text-[22px]">Raul Harris</h3>
+                    <h3 class="font-bold text-xl 2xl:text-[22px]">Chiboka Xmaven</h3>
                     <p>Client</p>
                   </span>
                   <span class="w-fit m-auto text-lg flex justify-center items-center mb-2 2xl:text-[18px]"><i
@@ -682,8 +694,7 @@
                       class="uil uil-favorite"></i><i class="uil uil-favorite"></i>
                   </span>
                 </div>
-                <p class="2xl:text-lg">"I get good impression, I carry out my project with all possible quality and attention and support 24
-                  hours a day."</p>
+                <p class="2xl:text-lg">"Working with Vince has been phenomenal. His efficiency and dedication are unmatched. I can't speak highly enough of his exceptional work!"</p>
               </div>
             </div>
             <!-- add pagination -->
